@@ -497,6 +497,146 @@ include 'header.php';
                         </a>
                     </div>
                 </div>
+                    
+                    <div class="col-md-6">
+                        <a href="winadda.php" class="text-decoration-none">
+                            <div class="game-card-detailed">
+                                <img src="assets/winadda-game.webp" alt="Winadda" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
+                                <div class="game-header">
+                                    <div class="game-icon-large">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="game-title-large">Winadda</h3>
+                                        <span class="game-badge">Premium</span>
+                                    </div>
+                                </div>
+                                <p class="game-desc-detailed">Premium casino experience with live odds and massive payouts! Test your luck with high multipliers.</p>
+                                <div class="game-stats">
+                                    <div class="stat-item">
+                                        <i class="fas fa-trophy"></i>
+                                        <span>10,000x Max</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-star"></i>
+                                        <span>Premium</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <a href="fairdeal.php" class="text-decoration-none">
+                            <div class="game-card-detailed">
+                                <img src="assets/fairdeal-game.webp" alt="Fairdeal" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
+                                <div class="game-header">
+                                    <div class="game-icon-large">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="game-title-large">Fairdeal</h3>
+                                        <span class="game-badge">Fair Play</span>
+                                    </div>
+                                </div>
+                                <p class="game-desc-detailed">Transparent casino game with guaranteed fair play and honest odds! Enjoy worry-free gaming.</p>
+                                <div class="game-stats">
+                                    <div class="stat-item">
+                                        <i class="fas fa-trophy"></i>
+                                        <span>5,000x Max</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Fair</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <a href="99exch.php" class="text-decoration-none">
+                            <div class="game-card-detailed">
+                                <img src="assets/99exch-game.webp" alt="99exch" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
+                                <div class="game-header">
+                                    <div class="game-icon-large">
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="game-title-large">99exch</h3>
+                                        <span class="game-badge">VIP</span>
+                                    </div>
+                                </div>
+                                <p class="game-desc-detailed">High-stakes casino game with VIP features and premium rewards! For serious players only.</p>
+                                <div class="game-stats">
+                                    <div class="stat-item">
+                                        <i class="fas fa-trophy"></i>
+                                        <span>20,000x Max</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-crown"></i>
+                                        <span>VIP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <a href="laser247.php" class="text-decoration-none">
+                            <div class="game-card-detailed">
+                                <img src="assets/laser247-game.webp" alt="Laser 247" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
+                                <div class="game-header">
+                                    <div class="game-icon-large">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="game-title-large">Laser 247</h3>
+                                        <span class="game-badge">24/7</span>
+                                    </div>
+                                </div>
+                                <p class="game-desc-detailed">24/7 instant casino action with lightning-fast results anytime! Never miss a moment.</p>
+                                <div class="game-stats">
+                                    <div class="stat-item">
+                                        <i class="fas fa-trophy"></i>
+                                        <span>2,470x Max</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-bolt"></i>
+                                        <span>Fast</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <a href="11xplay.php" class="text-decoration-none">
+                            <div class="game-card-detailed">
+                                <img src="assets/11xplay-game.webp" alt="11xplay" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
+                                <div class="game-header">
+                                    <div class="game-icon-large">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="game-title-large">11xplay</h3>
+                                        <span class="game-badge">Multiplayer</span>
+                                    </div>
+                                </div>
+                                <p class="game-desc-detailed">Multiplayer casino game with 11x multiplier potential and social features! Play with friends.</p>
+                                <div class="game-stats">
+                                    <div class="stat-item">
+                                        <i class="fas fa-trophy"></i>
+                                        <span>11x Multiplier</span>
+                                    </div>
+                                    <div class="stat-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Social</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
             </div>
             
             <!-- Game Comparison Table -->
@@ -770,121 +910,3 @@ include 'header.php';
 </style>
 
 <?php include 'footer.php'; ?>
-
-            <!-- New Exchange Games Section -->
-            <div class="game-category-section mb-5">
-                <h2 class="category-heading"><i class="fas fa-exchange-alt me-2"></i>Exchange & Betting Games</h2>
-                <p class="category-description">Experience premium betting exchange platforms with massive multipliers and instant payouts!</p>
-                
-                <div class="row g-4 mt-3">
-                    <div class="col-md-6">
-                        <a href="winadda.php" class="text-decoration-none">
-                            <div class="game-card-detailed">
-                                <img src="assets/winadda-game.webp" alt="Winadda" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
-                                <div class="game-header">
-                                    <div class="game-icon-large">
-                                        <i class="fas fa-trophy"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="game-title-large">Winadda</h3>
-                                        <span class="game-badge">10,000x Max</span>
-                                    </div>
-                                </div>
-                                <p class="game-description">Premium betting exchange platform with live odds and massive payouts!</p>
-                                <div class="game-stats">
-                                    <span><i class="fas fa-coins"></i> 10-5,000</span>
-                                    <span><i class="fas fa-star"></i> 10,000x</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <a href="fairdeal.php" class="text-decoration-none">
-                            <div class="game-card-detailed">
-                                <img src="assets/fairdeal-game.webp" alt="Fairdeal" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
-                                <div class="game-header">
-                                    <div class="game-icon-large">
-                                        <i class="fas fa-shield-alt"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="game-title-large">Fairdeal</h3>
-                                        <span class="game-badge">Fair Play</span>
-                                    </div>
-                                </div>
-                                <p class="game-description">Transparent betting with guaranteed fair play and honest odds!</p>
-                                <div class="game-stats">
-                                    <span><i class="fas fa-coins"></i> 5-2,500</span>
-                                    <span><i class="fas fa-star"></i> 5,000x</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <a href="99exch.php" class="text-decoration-none">
-                            <div class="game-card-detailed">
-                                <img src="assets/99exch-game.webp" alt="99exch" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
-                                <div class="game-header">
-                                    <div class="game-icon-large">
-                                        <i class="fas fa-crown"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="game-title-large">99exch</h3>
-                                        <span class="game-badge">VIP</span>
-                                    </div>
-                                </div>
-                                <p class="game-description">High-stakes exchange with VIP features and premium rewards!</p>
-                                <div class="game-stats">
-                                    <span><i class="fas fa-coins"></i> 50-10,000</span>
-                                    <span><i class="fas fa-star"></i> 20,000x</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <a href="laser247.php" class="text-decoration-none">
-                            <div class="game-card-detailed">
-                                <img src="assets/laser247-game.webp" alt="Laser 247" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
-                                <div class="game-header">
-                                    <div class="game-icon-large">
-                                        <i class="fas fa-bolt"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="game-title-large">Laser 247</h3>
-                                        <span class="game-badge">24/7</span>
-                                    </div>
-                                </div>
-                                <p class="game-description">24/7 instant betting with lightning-fast payouts anytime!</p>
-                                <div class="game-stats">
-                                    <span><i class="fas fa-coins"></i> 1-1,000</span>
-                                    <span><i class="fas fa-star"></i> 2,470x</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="col-md-6">
-                        <a href="11xplay.php" class="text-decoration-none">
-                            <div class="game-card-detailed">
-                                <img src="assets/11xplay-game.webp" alt="11xplay" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
-                                <div class="game-header">
-                                    <div class="game-icon-large">
-                                        <i class="fas fa-users"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="game-title-large">11xplay</h3>
-                                        <span class="game-badge">Multiplayer</span>
-                                    </div>
-                                </div>
-                                <p class="game-description">Multiplayer betting with 11x multiplier potential and social features!</p>
-                                <div class="game-stats">
-                                    <span><i class="fas fa-coins"></i> 10-1,000</span>
-                                    <span><i class="fas fa-star"></i> 11x</span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
