@@ -1,5 +1,5 @@
 <?php 
-$pageTitle = "Winadda - Premium Betting Exchange";
+$pageTitle = "Winadda - Premium Casino Game";
 include 'header.php'; 
 ?>
 
@@ -9,8 +9,8 @@ include 'header.php';
 <div class="container my-5">
     <div class="game-header text-center mb-5 fade-in-up">
         <h1 class="game-title">🎰 Winadda 🎰</h1>
-        <p class="game-subtitle">Premium Betting Exchange Platform</p>
-        <p class="game-description">Experience the thrill of live betting with real-time odds and massive payouts up to 10000x!</p>
+        <p class="game-subtitle">Premium Casino Game Platform</p>
+        <p class="game-description">Experience the thrill of live casino action with real-time odds and massive payouts up to 10000x!</p>
         <div class="game-stats-row">
             <div class="stat-card">
                 <i class="fas fa-coins stat-icon"></i>
@@ -113,7 +113,7 @@ include 'header.php';
                         
                         <div class="info-section">
                             <h4>🎮 Game Overview</h4>
-                            <p>Winadda is a premium betting exchange game that combines the excitement of live betting with the potential for massive wins. With a maximum payout of 10,000x your bet, every spin could change your fortune! Our advanced algorithm ensures fair play while delivering an authentic casino experience.</p>
+                            <p>Winadda is a premium casino game game that combines the excitement of live casino action with the potential for massive wins. With a maximum payout of 10,000x your bet, every spin could change your fortune! Our advanced algorithm ensures fair play while delivering an authentic casino experience.</p>
                         </div>
                         
                         <div class="info-section">
