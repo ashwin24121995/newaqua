@@ -5,7 +5,7 @@ include 'header.php';
 
 <div class="container my-5">
     <h1 class="section-heading">Explore Our Casino Games</h1>
-    <p class="lead text-center mb-5">Discover 11 exciting casino games, each offering unique gameplay, thrilling features, and the chance to win big with virtual coins. From classic slots to strategic card games, there's something for everyone!</p>
+    <p class="lead text-center mb-5">Discover 17 exciting casino games, each offering unique gameplay, thrilling features, and the chance to win big with virtual coins. From classic slots to strategic card games, there's something for everyone!</p>
     
     <div class="row">
         <div class="col-lg-10 mx-auto">
@@ -17,7 +17,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <ul class="feature-list">
                             <li><i class="fas fa-check-circle text-success me-2"></i><strong>100% Free:</strong> No deposits, no hidden costs</li>
-                            <li><i class="fas fa-check-circle text-success me-2"></i><strong>11 Unique Games:</strong> Variety for every taste</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i><strong>17 Unique Games:</strong> Variety for every taste</li>
                             <li><i class="fas fa-check-circle text-success me-2"></i><strong>Fair Play:</strong> Random outcomes guaranteed</li>
                         </ul>
                     </div>
