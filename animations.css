@@ -1,0 +1,347 @@
+/* AQUASTRUCT Casino - Animation Styles */
+
+/* Jackpot Overlay */
+.jackpot-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Confetti Canvas */
+#confetti-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 10001;
+}
+
+/* Jackpot Popup */
+.jackpot-popup {
+    background: linear-gradient(135deg, var(--primary-purple) 0%, #2d1b4e 100%);
+    border: 5px solid var(--accent-gold);
+    border-radius: 20px;
+    padding: 3rem 4rem;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.5), 0 0 100px rgba(255, 215, 0, 0.3);
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    position: relative;
+    z-index: 10002;
+    max-width: 600px;
+}
+
+.jackpot-popup.show {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Jackpot Stars */
+.jackpot-stars {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: sparkle 1s infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.7; transform: scale(1.2); }
+}
+
+/* Jackpot Title */
+.jackpot-title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--accent-gold);
+    text-shadow: 
+        0 0 10px rgba(255, 215, 0, 0.8),
+        0 0 20px rgba(255, 215, 0, 0.6),
+        0 0 30px rgba(255, 215, 0, 0.4),
+        3px 3px 0 var(--primary-purple),
+        -3px -3px 0 var(--primary-purple);
+    margin: 1rem 0;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Jackpot Amount */
+.jackpot-amount {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    margin: 1.5rem 0;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.6); }
+    to { text-shadow: 0 0 30px rgba(255, 215, 0, 1), 0 0 50px rgba(255, 215, 0, 0.8); }
+}
+
+/* Jackpot Message */
+.jackpot-message {
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 1rem 0 2rem 0;
+    font-weight: 600;
+}
+
+/* Jackpot Close Button */
+.jackpot-close-btn {
+    background: linear-gradient(135deg, var(--accent-gold) 0%, #ffed4e 100%);
+    color: var(--primary-purple);
+    border: none;
+    padding: 1rem 3rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.jackpot-close-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.6);
+}
+
+.jackpot-close-btn:active {
+    transform: translateY(-1px);
+}
+
+/* Win Popup (smaller wins) */
+.win-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    border: 4px solid #fff;
+    border-radius: 15px;
+    padding: 2rem 3rem;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.win-popup.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.win-content {
+    color: #fff;
+}
+
+.win-icon {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    animation: bounce 0.6s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.win-text {
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.5rem;
+}
+
+.win-amount {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Sound Toggle Button */
+.sound-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-purple) 0%, var(--accent-gold) 100%);
+    border: 3px solid var(--accent-gold);
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sound-toggle-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+.sound-toggle-btn:active {
+    transform: scale(0.95);
+}
+
+/* Spinning Animation (for slots, roulette) */
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.spinning {
+    animation: spin 1s linear infinite;
+}
+
+/* Card Flip Animation */
+@keyframes cardFlip {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(90deg); }
+    100% { transform: rotateY(0deg); }
+}
+
+.card-flip {
+    animation: cardFlip 0.6s ease;
+}
+
+/* Coin Drop Animation */
+@keyframes coinDrop {
+    0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(0) rotate(720deg); opacity: 1; }
+}
+
+.coin-drop {
+    animation: coinDrop 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Shake Animation (for losses) */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+    20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+    animation: shake 0.5s ease;
+}
+
+/* Glow Effect */
+.glow {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 0 0 40px rgba(255, 215, 0, 0.4);
+    animation: glowPulse 1.5s infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.6), 0 0 40px rgba(255, 215, 0, 0.4); }
+    50% { box-shadow: 0 0 30px rgba(255, 215, 0, 0.8), 0 0 60px rgba(255, 215, 0, 0.6); }
+}
+
+/* Number Counter Animation */
+@keyframes numberCount {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.number-count {
+    animation: numberCount 0.5s ease;
+}
+
+/* Button Press Animation */
+.btn-press {
+    transform: scale(0.95);
+    transition: transform 0.1s ease;
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .jackpot-popup {
+        padding: 2rem;
+        max-width: 90%;
+    }
+    
+    .jackpot-title {
+        font-size: 2.5rem;
+    }
+    
+    .jackpot-amount {
+        font-size: 2rem;
+    }
+    
+    .jackpot-message {
+        font-size: 1.1rem;
+    }
+    
+    .jackpot-close-btn {
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .win-popup {
+        padding: 1.5rem 2rem;
+    }
+    
+    .win-icon {
+        font-size: 3rem;
+    }
+    
+    .win-text {
+        font-size: 1.5rem;
+    }
+    
+    .win-amount {
+        font-size: 2rem;
+    }
+    
+    .sound-toggle-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+        bottom: 15px;
+        right: 15px;
+    }
+}
