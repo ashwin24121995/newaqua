@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = "Dice Game";
-include '../header.php'; 
+include 'header.php'; 
 ?>
 
 <div class="container my-5">
@@ -244,4 +244,4 @@ function rollDice() {
 }
 </script>
 
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>

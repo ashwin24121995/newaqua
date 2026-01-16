@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = "Blackjack";
-include '../header.php'; 
+include 'header.php'; 
 ?>
 
 <div class="container my-5">
@@ -295,4 +295,4 @@ function endGame(won, message) {
 }
 </script>
 
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>

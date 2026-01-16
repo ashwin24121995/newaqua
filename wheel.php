@@ -1,3 +1,3 @@
-<?php $pageTitle='Wheel'; include '../header.php'; ?>
+<?php $pageTitle='Wheel'; include 'header.php'; ?>
 <div class='container my-5'><div class='game-container'><h1 class='text-center mb-4' style='color: var(--primary-purple);'><i class='fas fa-dharmachakra me-2'></i>Wheel of Fortune</h1><div class='game-interface'><div class='balance-display-game'><i class='fas fa-wallet me-2'></i>Balance: <span id='gameBalance'>10,000</span> Coins</div><div class='text-center p-5'><div style='width:200px;height:200px;margin:0 auto;background:conic-gradient(from 0deg,#FFD700 0deg 60deg,#dc3545 60deg 120deg,#000 120deg 180deg,#FFD700 180deg 240deg,#dc3545 240deg 300deg,#000 300deg 360deg);border-radius:50%;border:5px solid var(--accent-gold);'></div><h3 class='text-white mt-4'>Spin the Wheel!</h3><button class='btn btn-primary mt-3'>SPIN (Bet: 100)</button></div></div><div class='text-center mt-4'><a href='../games.php' class='btn btn-secondary'><i class='fas fa-arrow-left me-2'></i>Back to Games</a></div></div></div>
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>

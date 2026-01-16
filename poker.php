@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = "Video Poker";
-include '../header.php'; 
+include 'header.php'; 
 ?>
 
 <div class="container my-5">
@@ -289,4 +289,4 @@ function evaluateHand(cards) {
 }
 </script>
 
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = "Slot Machine";
-include '../header.php'; 
+include 'header.php'; 
 ?>
 
 <div class="container my-5">
@@ -220,4 +220,4 @@ function spin() {
 }
 </script>
 
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>

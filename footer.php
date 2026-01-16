@@ -94,5 +94,6 @@
     
     <!-- Custom JavaScript -->
     <script src="script.js"></script>
+    <script src="sounds.js"></script>
 </body>
 </html>

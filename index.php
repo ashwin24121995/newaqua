@@ -4,7 +4,7 @@ include 'header.php';
 ?>
 
 <!-- Hero Section -->
-<section class="hero-section-detailed" style="background-image: url('assets/hero-bg.jpg'); background-size: cover; background-position: center; background-attachment: fixed;">
+<section class="hero-section-detailed" style="background-image: url('assets/hero-bg.webp'); background-size: cover; background-position: center; background-attachment: fixed;">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6">
@@ -286,7 +286,7 @@ include 'header.php';
             <div class="col-md-4">
                 <div class="featured-game-card">
                     <div class="game-image-real">
-                        <img src="assets/slots-game.jpg" alt="Slot Machine Game">
+                        <img src="assets/slots-game.webp" alt="Slot Machine Game">
                     </div>
                     <div class="game-info">
                         <h4><i class="fas fa-coins me-2"></i>Slot Machines</h4>
@@ -299,7 +299,7 @@ include 'header.php';
             <div class="col-md-4">
                 <div class="featured-game-card">
                     <div class="game-image-real">
-                        <img src="assets/poker-game.jpg" alt="Poker Game">
+                        <img src="assets/poker-game.webp" alt="Poker Game">
                     </div>
                     <div class="game-info">
                         <h4><i class="fas fa-diamond me-2"></i>Poker Tables</h4>
@@ -312,7 +312,7 @@ include 'header.php';
             <div class="col-md-4">
                 <div class="featured-game-card">
                     <div class="game-image-real">
-                        <img src="assets/roulette-game.jpg" alt="Roulette Game">
+                        <img src="assets/roulette-game.webp" alt="Roulette Game">
                     </div>
                     <div class="game-info">
                         <h4><i class="fas fa-circle-notch me-2"></i>Roulette</h4>

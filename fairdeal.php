@@ -35,7 +35,7 @@ include 'header.php';
             
             <!-- Game Visual Banner -->
             <div class="game-banner-container mb-5">
-                <img src="assets/fairdeal-game.jpg" alt="Fairdeal Game" class="game-banner-image">
+                <img src="assets/fairdeal-game.webp" alt="Fairdeal Game" class="game-banner-image">
                 <div class="game-banner-overlay">
                     <button class="btn-start-game" onclick="initializeGame()">
                         <i class="fas fa-play-circle me-2"></i>Start Playing

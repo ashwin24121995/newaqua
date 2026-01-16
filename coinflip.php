@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = "Coin Flip";
-include '../header.php'; 
+include 'header.php'; 
 ?>
 <div class="container my-5">
     <div class="game-container">
@@ -76,4 +76,4 @@ document.getElementById('flipBtn').addEventListener('click', () => {
     }, 600);
 });
 </script>
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>

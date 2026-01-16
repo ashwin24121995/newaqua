@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = "Baccarat";
-include '../header.php'; 
+include 'header.php'; 
 ?>
 
 <div class="container my-5">
@@ -195,4 +195,4 @@ function playBaccarat() {
 }
 </script>
 
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>

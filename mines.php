@@ -1,3 +1,3 @@
-<?php $pageTitle='Mines'; include '../header.php'; ?>
+<?php $pageTitle='Mines'; include 'header.php'; ?>
 <div class='container my-5'><div class='game-container'><h1 class='text-center mb-4' style='color: var(--primary-purple);'><i class='fas fa-bomb me-2'></i>Mines Game</h1><div class='game-interface'><div class='balance-display-game'><i class='fas fa-wallet me-2'></i>Balance: <span id='gameBalance'>10,000</span> Coins</div><div class='text-center p-5'><h3 class='text-white mb-4'>Minesweeper Style Game</h3><p class='text-white'>Click tiles to reveal gems, avoid mines!</p></div></div><div class='text-center mt-4'><a href='../games.php' class='btn btn-secondary'><i class='fas fa-arrow-left me-2'></i>Back to Games</a></div></div></div>
-<?php include '../footer.php'; ?>
+<?php include 'footer.php'; ?>
