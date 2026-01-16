@@ -40,6 +40,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <a href="poker.php" class="text-decoration-none">
                             <div class="game-card-detailed">
+                                <img src="assets/poker-game.webp" alt="Video Poker" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
                                 <div class="game-header">
                                     <div class="game-icon-large">
                                         <i class="fas fa-diamond"></i>
@@ -68,9 +69,7 @@ include 'header.php';
                                         <li>Royal Flush, Straight Flush, Four of a Kind</li>
                                         <li>Clear payout table displayed</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -78,6 +77,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <a href="blackjack.php" class="text-decoration-none">
                             <div class="game-card-detailed">
+                                <img src="assets/blackjack-game.webp" alt="Blackjack" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
                                 <div class="game-header">
                                     <div class="game-icon-large">
                                         <i class="fas fa-spade"></i>
@@ -106,9 +106,7 @@ include 'header.php';
                                         <li>Hit, Stand, and Double options</li>
                                         <li>Natural blackjack pays 3:2</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -144,9 +142,7 @@ include 'header.php';
                                         <li>Classic casino atmosphere</li>
                                         <li>Easy to learn, exciting to play</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -162,6 +158,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <a href="slots.php" class="text-decoration-none">
                             <div class="game-card-detailed">
+                                <img src="assets/slots-game.webp" alt="Slots" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
                                 <div class="game-header">
                                     <div class="game-icon-large">
                                         <i class="fas fa-coins"></i>
@@ -190,9 +187,7 @@ include 'header.php';
                                         <li>Spinning animations</li>
                                         <li>Multiple winning combinations</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -200,6 +195,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <a href="roulette.php" class="text-decoration-none">
                             <div class="game-card-detailed">
+                                <img src="assets/roulette-game.webp" alt="Roulette" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
                                 <div class="game-header">
                                     <div class="game-icon-large">
                                         <i class="fas fa-circle-notch"></i>
@@ -228,9 +224,7 @@ include 'header.php';
                                         <li>Single number bets (35x)</li>
                                         <li>Authentic casino experience</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -266,9 +260,7 @@ include 'header.php';
                                         <li>Easy to understand</li>
                                         <li>Exciting animations</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -312,9 +304,7 @@ include 'header.php';
                                         <li>Lucky 7 special payout</li>
                                         <li>Fast-paced action</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -350,9 +340,7 @@ include 'header.php';
                                         <li>Flip animation</li>
                                         <li>Fastest game available</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -396,9 +384,7 @@ include 'header.php';
                                         <li>Unpredictable crash point</li>
                                         <li>Adrenaline-pumping action</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -434,9 +420,7 @@ include 'header.php';
                                         <li>Increasing multipliers</li>
                                         <li>Cash out option</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -472,9 +456,7 @@ include 'header.php';
                                         <li>Unpredictable bouncing</li>
                                         <li>Visual entertainment</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -510,9 +492,7 @@ include 'header.php';
                                         <li>20 numbers drawn</li>
                                         <li>Match more, win more</li>
                                     </ul>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -800,6 +780,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <a href="winadda.php" class="text-decoration-none">
                             <div class="game-card-detailed">
+                                <img src="assets/winadda-game.webp" alt="Winadda" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
                                 <div class="game-header">
                                     <div class="game-icon-large">
                                         <i class="fas fa-trophy"></i>
@@ -813,9 +794,7 @@ include 'header.php';
                                 <div class="game-stats">
                                     <span><i class="fas fa-coins"></i> 10-5,000</span>
                                     <span><i class="fas fa-star"></i> 10,000x</span>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -823,6 +802,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <a href="fairdeal.php" class="text-decoration-none">
                             <div class="game-card-detailed">
+                                <img src="assets/fairdeal-game.webp" alt="Fairdeal" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
                                 <div class="game-header">
                                     <div class="game-icon-large">
                                         <i class="fas fa-shield-alt"></i>
@@ -836,9 +816,7 @@ include 'header.php';
                                 <div class="game-stats">
                                     <span><i class="fas fa-coins"></i> 5-2,500</span>
                                     <span><i class="fas fa-star"></i> 5,000x</span>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -846,6 +824,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <a href="99exch.php" class="text-decoration-none">
                             <div class="game-card-detailed">
+                                <img src="assets/99exch-game.webp" alt="99exch" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
                                 <div class="game-header">
                                     <div class="game-icon-large">
                                         <i class="fas fa-crown"></i>
@@ -859,9 +838,7 @@ include 'header.php';
                                 <div class="game-stats">
                                     <span><i class="fas fa-coins"></i> 50-10,000</span>
                                     <span><i class="fas fa-star"></i> 20,000x</span>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -869,6 +846,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <a href="laser247.php" class="text-decoration-none">
                             <div class="game-card-detailed">
+                                <img src="assets/laser247-game.webp" alt="Laser 247" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
                                 <div class="game-header">
                                     <div class="game-icon-large">
                                         <i class="fas fa-bolt"></i>
@@ -882,9 +860,7 @@ include 'header.php';
                                 <div class="game-stats">
                                     <span><i class="fas fa-coins"></i> 1-1,000</span>
                                     <span><i class="fas fa-star"></i> 2,470x</span>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -892,6 +868,7 @@ include 'header.php';
                     <div class="col-md-6">
                         <a href="11xplay.php" class="text-decoration-none">
                             <div class="game-card-detailed">
+                                <img src="assets/11xplay-game.webp" alt="11xplay" class="img-fluid rounded mb-3" style="width:100%; height:200px; object-fit:cover;">
                                 <div class="game-header">
                                     <div class="game-icon-large">
                                         <i class="fas fa-users"></i>
@@ -905,9 +882,7 @@ include 'header.php';
                                 <div class="game-stats">
                                     <span><i class="fas fa-coins"></i> 10-1,000</span>
                                     <span><i class="fas fa-star"></i> 11x</span>
-                                <a href="</div>
-                            </div>
-                        </a>.php" class="play-now-btn"><i class="fas fa-play me-2"></i>Play Now</a></div>
+                                </div>
                             </div>
                         </a>
                     </div>
