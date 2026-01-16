@@ -259,7 +259,7 @@ include 'header.php';
                     <div class="step-number">3</div>
                     <div class="step-icon"><i class="fas fa-gamepad"></i></div>
                     <h4>Choose Your Game</h4>
-                    <p>Browse our collection of 11 casino games. Pick your favorite - slots, poker, roulette, and more!</p>
+                    <p>Browse our collection of 17 casino games. Pick your favorite - slots, poker, roulette, and more!</p>
                 </div>
             </div>
             <div class="col-md-3">
@@ -326,7 +326,7 @@ include 'header.php';
         
         <div class="text-center mt-5">
             <a href="games.php" class="btn btn-primary btn-lg">
-                <i class="fas fa-th me-2"></i>View All 11 Games
+                <i class="fas fa-th me-2"></i>View All 17 Games
             </a>
         </div>
     </div>
