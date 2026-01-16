@@ -38,7 +38,7 @@ include 'header.php';
                 
                 <div class="row g-4 mt-3">
                     <div class="col-md-6">
-                        <a href="games/poker.php" class="text-decoration-none">
+                        <a href="poker.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -74,7 +74,7 @@ include 'header.php';
                     </div>
                     
                     <div class="col-md-6">
-                        <a href="games/blackjack.php" class="text-decoration-none">
+                        <a href="blackjack.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -110,7 +110,7 @@ include 'header.php';
                     </div>
                     
                     <div class="col-md-6">
-                        <a href="games/baccarat.php" class="text-decoration-none">
+                        <a href="baccarat.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -154,7 +154,7 @@ include 'header.php';
                 
                 <div class="row g-4 mt-3">
                     <div class="col-md-6">
-                        <a href="games/slots.php" class="text-decoration-none">
+                        <a href="slots.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -190,7 +190,7 @@ include 'header.php';
                     </div>
                     
                     <div class="col-md-6">
-                        <a href="games/roulette.php" class="text-decoration-none">
+                        <a href="roulette.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -226,7 +226,7 @@ include 'header.php';
                     </div>
                     
                     <div class="col-md-6">
-                        <a href="games/wheel.php" class="text-decoration-none">
+                        <a href="wheel.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -270,7 +270,7 @@ include 'header.php';
                 
                 <div class="row g-4 mt-3">
                     <div class="col-md-6">
-                        <a href="games/dice.php" class="text-decoration-none">
+                        <a href="dice.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -306,7 +306,7 @@ include 'header.php';
                     </div>
                     
                     <div class="col-md-6">
-                        <a href="games/coinflip.php" class="text-decoration-none">
+                        <a href="coinflip.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -350,7 +350,7 @@ include 'header.php';
                 
                 <div class="row g-4 mt-3">
                     <div class="col-md-6">
-                        <a href="games/crash.php" class="text-decoration-none">
+                        <a href="crash.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -386,7 +386,7 @@ include 'header.php';
                     </div>
                     
                     <div class="col-md-6">
-                        <a href="games/mines.php" class="text-decoration-none">
+                        <a href="mines.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -422,7 +422,7 @@ include 'header.php';
                     </div>
                     
                     <div class="col-md-6">
-                        <a href="games/plinko.php" class="text-decoration-none">
+                        <a href="plinko.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">
@@ -458,7 +458,7 @@ include 'header.php';
                     </div>
                     
                     <div class="col-md-6">
-                        <a href="games/keno.php" class="text-decoration-none">
+                        <a href="keno.php" class="text-decoration-none">
                             <div class="game-card-detailed">
                                 <div class="game-header">
                                     <div class="game-icon-large">

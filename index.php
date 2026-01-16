@@ -292,7 +292,7 @@ include 'header.php';
                         <h4><i class="fas fa-coins me-2"></i>Slot Machines</h4>
                         <p>Spin the reels and match symbols to win big! Multiple paylines, exciting bonus features, 
                         and huge jackpots await. Classic casino action with modern twists.</p>
-                        <a href="games/slots.php" class="btn btn-play">Play Now</a>
+                        <a href="slots.php" class="btn btn-play">Play Now</a>
                     </div>
                 </div>
             </div>
@@ -305,7 +305,7 @@ include 'header.php';
                         <h4><i class="fas fa-diamond me-2"></i>Poker Tables</h4>
                         <p>Test your skills in classic video poker games. Build the best hands, master the strategy, 
                         and win big with Royal Flushes and Four of a Kind!</p>
-                        <a href="games/poker.php" class="btn btn-play">Play Now</a>
+                        <a href="poker.php" class="btn btn-play">Play Now</a>
                     </div>
                 </div>
             </div>
@@ -318,7 +318,7 @@ include 'header.php';
                         <h4><i class="fas fa-circle-notch me-2"></i>Roulette</h4>
                         <p>Place your bets and watch the wheel spin! Classic European roulette with all your favorite 
                         bets: red/black, odd/even, numbers, and more. Pure casino excitement!</p>
-                        <a href="games/roulette.php" class="btn btn-play">Play Now</a>
+                        <a href="roulette.php" class="btn btn-play">Play Now</a>
                     </div>
                 </div>
             </div>
