@@ -1,38 +1,44 @@
-# AQUASTRUCT Casino - Deployment Guide
+# 🎰 AQUASTRUCT Casino - Complete Social Casino Platform
 
-This document provides instructions on how to deploy the AQUASTRUCT social casino website.
+![PHP](https://img.shields.io/badge/PHP-7.4+-blue) ![Games](https://img.shields.io/badge/Games-17-green) ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 
-## Requirements
+## 🎉 Complete Social Casino Website
 
-- A web server with **PHP 7.4+ support**.
-- A domain name.
+**17 fully functional games** with professional sounds, animations, and deep detailed content!
 
-## Deployment Steps
+### ✨ Features
+- 🎮 17 Casino Games (Slots, Poker, Roulette, Blackjack, and more)
+- 🔊 Complete Sound System (Web Audio API)
+- ✨ Professional Animations (Jackpot popups with confetti)
+- 📱 Fully Responsive Design
+- 💰 Virtual Currency System
+- 🚀 Easy Deployment (No database!)
 
-1.  **Upload Files**: Unzip the `aquastruct_casino.zip` file. Upload the entire contents of the `aquastruct_casino` directory to the root directory of your web server (e.g., `public_html`, `www`, or `htdocs`).
+## 🚀 Quick Start
 
-2.  **Configure Domain**: Point your domain name to the root directory where you uploaded the files.
+```bash
+# Clone repository
+git clone https://github.com/ashwin24121995/aquastruct-casino.git
 
-3.  **Test**: Open your domain in a web browser. The homepage should load, and all links and games should be functional.
+# Upload to web server (public_html/)
+# Visit your website - Done!
+```
 
-## Key Features
+**Requirements:** PHP 7.4+ only
 
-- **No Database Required**: The website is built with a file-based architecture and does not require a database.
-- **Easy Customization**: You can easily change the logo, colors, and company details by editing the `header.php`, `footer.php`, and `styles.css` files.
-- **Responsive Design**: The website is fully responsive and works on desktop, tablet, and mobile devices.
+## 📊 Statistics
+- **Total Games:** 17
+- **Total Files:** 56
+- **Lines of Code:** 12,714+
+- **Package Size:** 74 MB
 
-## File Structure
+## 🎮 Games
+1-12: Slots, Poker, Roulette, Blackjack, Dice, Baccarat, Coin Flip, Wheel, Crash, Mines, Plinko, Keno
+13-17: Winadda, Fairdeal, 99exch, Laser 247, 11xplay (NEW!)
 
-- `index.php`: The main homepage.
-- `header.php`: The global header, including navigation and branding.
-- `footer.php`: The global footer, including company information and legal links.
-- `styles.css`: The main stylesheet for the website.
-- `script.js`: The main JavaScript file for virtual currency management.
-- `assets/`: Contains all static assets, including the logo and favicon.
-- `games/`: Contains the individual PHP files for each of the 11 casino games.
+## 📞 Contact
+**AQUASTRUCT CONSTRUCTION PRIVATE LIMITED**  
+Email: Support@valhallafantasy.com
 
-## Important Notes
-
-- **Virtual Currency**: The virtual currency system is managed using the browser's `localStorage`. The balance is not stored on the server.
-- **No User Accounts**: The platform does not have a user registration or login system.
-- **Entertainment Only**: This is a social casino for entertainment purposes only. No real money is involved.
+---
+Built with ❤️ | Production-Ready ✅
