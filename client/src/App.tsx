@@ -17,6 +17,12 @@ import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
 import Lobby from "./pages/Lobby";
 import GameLobby from "./pages/GameLobby";
+import SlotGame from "./pages/SlotGame";
+import PokerGame from "./pages/PokerGame";
+import RouletteGame from "./pages/RouletteGame";
+import DiceGame from "./pages/DiceGame";
+import MinesGame from "./pages/MinesGame";
+import ChickenGame from "./pages/ChickenGame";
 
 /**
  * Design Philosophy: Premium Digital Entertainment with Luxury Accents
@@ -41,8 +47,13 @@ function Router() {
       <Route path={"/faq"} component={FAQ} />
       <Route path={"/lobbies"} component={Lobby} />
       <Route path={"/game-lobby/:gameId/:roomId"} component={GameLobby} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
+      <Route path={"/play/slots"} component={SlotGame} />
+      <Route path={"/play/poker"} component={PokerGame} />
+      <Route path={"/play/roulette"} component={RouletteGame} />
+      <Route path={"/play/dice"} component={DiceGame} />
+      <Route path={"/play/mines"} component={MinesGame} />
+      <Route path={"/play/chicken"} component={ChickenGame} />
+      <Route path={"/404"} component={NotFound} />      {/* Final fallback route */}
       <Route component={NotFound} />
     </Switch>
   );

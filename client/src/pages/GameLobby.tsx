@@ -222,7 +222,7 @@ export default function GameLobby() {
                   viewport={{ once: true }}
                   className="bg-gradient-to-br from-[#1a0f3a] to-[#0a0e27] border border-[#00FF88]/20 rounded-xl p-8 mb-8"
                 >
-                  <button className="w-full bg-gradient-to-r from-[#00FF88] to-[#00cc6f] text-[#0a0e27] font-bold py-4 px-6 rounded-lg flex items-center justify-center gap-2 text-lg mb-6">
+                  <button onClick={() => setLocation(`/play/${gameId}` )} className="w-full bg-gradient-to-r from-[#00FF88] to-[#00cc6f] text-[#0a0e27] font-bold py-4 px-6 rounded-lg flex items-center justify-center gap-2 text-lg mb-6 hover:from-[#00dd77] hover:to-[#00bb5e] transition">
                     <Play size={24} />
                     Join Game
                   </button>
