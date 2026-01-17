@@ -51,16 +51,18 @@ export default function RouletteGame() {
   const numbers = Array.from({ length: 37 }, (_, i) => i);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950 to-slate-950 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950 to-slate-950 flex flex-col" style={{ backgroundImage: "url('/images/bg-roulette-game.png')", backgroundSize: "cover", backgroundAttachment: "fixed" }}>
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-purple-950/80 to-slate-950/80 pointer-events-none" />
+    <div className="relative z-10 min-h-screen flex flex-col">
       <Header />
 
       <main className="flex-1 container py-8">
         <button
-          onClick={() => setLocation("/lobbies")}
-          className="flex items-center gap-2 text-neon-green hover:text-neon-green/80 mb-6 transition"
+          onClick={() => setLocation("/games")}
+          className="flex items-center gap-2 text-neon-green hover:text-neon-green/80 mb-6 transition font-semibold"
         >
           <ArrowLeft size={20} />
-          Back to Lobbies
+          Back to All Games
         </button>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -73,13 +75,13 @@ export default function RouletteGame() {
               <p className="text-slate-400 mb-8">Pick a number and spin to win!</p>
 
               {/* Spinning Wheel */}
-              <div className="flex justify-center mb-8">
+              <div className="flex justify-center mb-8 relative">
                 <motion.div
                   animate={spinning ? { rotate: 3600 } : {}}
                   transition={{ duration: 3, ease: "easeOut" }}
-                  className="w-48 h-48 rounded-full border-8 border-neon-green/50 bg-gradient-to-br from-red-600 to-black flex items-center justify-center text-6xl font-bold text-white shadow-2xl shadow-neon-green/30"
+                  className="w-80 h-80 rounded-full shadow-2xl shadow-neon-green/50 overflow-hidden border-4 border-neon-green/50"
                 >
-                  {result !== null && !spinning ? result : "🎡"}
+                  <img src="/images/roulette-wheel-3d.png" alt="Roulette Wheel" className="w-full h-full object-cover" />
                 </motion.div>
               </div>
 
@@ -204,6 +206,7 @@ export default function RouletteGame() {
       </main>
 
       <Footer />
+    </div>
     </div>
   );
 }

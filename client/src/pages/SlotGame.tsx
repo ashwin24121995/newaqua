@@ -135,16 +135,18 @@ export default function SlotGame() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950 to-slate-950 flex flex-col">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950 to-slate-950 flex flex-col" style={{ backgroundImage: "url('/images/bg-slots-game.png')", backgroundSize: "cover", backgroundAttachment: "fixed" }}>
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-purple-950/85 to-slate-950/85 pointer-events-none" />
+    <div className="relative z-10 min-h-screen flex flex-col">
       <Header />
 
       <main className="flex-1 container py-8">
         <button
-          onClick={() => setLocation("/lobbies")}
-          className="flex items-center gap-2 text-neon-green hover:text-neon-green/80 mb-6 transition"
+          onClick={() => setLocation("/games")}
+          className="flex items-center gap-2 text-neon-green hover:text-neon-green/80 mb-6 transition font-semibold"
         >
           <ArrowLeft size={20} />
-          Back to Lobbies
+          Back to All Games
         </button>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -244,11 +246,11 @@ export default function SlotGame() {
 
               {/* Spin Button */}
               <motion.button
-                whileHover={{ scale: spinning ? 1 : 1.05 }}
+                whileHover={{ scale: spinning ? 1 : 1.08, boxShadow: spinning ? "none" : "0 0 30px rgba(0, 255, 136, 0.8)" }}
                 whileTap={{ scale: spinning ? 1 : 0.95 }}
                 onClick={spin}
                 disabled={spinning}
-                className="w-full py-4 bg-gradient-to-r from-neon-green via-neon-green/80 to-neon-green/60 hover:from-neon-green/90 hover:via-neon-green/70 hover:to-neon-green/50 disabled:opacity-50 disabled:cursor-not-allowed text-slate-950 font-bold text-2xl rounded-lg transition shadow-2xl shadow-neon-green/50 mb-4"
+                className="w-full py-5 px-6 bg-gradient-to-r from-[#00FF88] via-[#00FF88] to-[#00DD77] hover:from-[#00FF88]/95 hover:via-[#00FF88]/95 hover:to-[#00DD77]/95 disabled:opacity-40 disabled:cursor-not-allowed text-black font-bold text-2xl rounded-xl transition duration-300 shadow-2xl shadow-[#00FF88]/60 mb-4 border-2 border-[#00FF88]/50 hover:border-[#00FF88] uppercase tracking-wider"
               >
                 {spinning ? "🎰 SPINNING..." : "🎰 SPIN REELS"}
               </motion.button>
@@ -309,6 +311,7 @@ export default function SlotGame() {
       </main>
 
       <Footer />
+    </div>
     </div>
   );
 }
