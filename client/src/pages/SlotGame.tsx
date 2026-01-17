@@ -39,6 +39,12 @@ export default function SlotGame() {
     const soundGen = getSoundGenerator();
     soundGen.playGameStart();
 
+    // Generate all reel results FIRST (before animation)
+    const newReel1 = Math.floor(Math.random() * symbols.length);
+    const newReel2 = Math.floor(Math.random() * symbols.length);
+    const newReel3 = Math.floor(Math.random() * symbols.length);
+    const finalReels = [newReel1, newReel2, newReel3];
+
     setSpinning(true);
     setWinAmount(0);
     setMessage("");
@@ -46,31 +52,24 @@ export default function SlotGame() {
     setCoins(coins - bet);
     setReelSpinning([true, true, true]);
 
-    // Play spinning sound
     soundGen.playSpinning();
 
-    // Reel 1 stops after 2 seconds - with realistic 35% win chance
+    // Reel 1 stops after 2 seconds
     setTimeout(() => {
-      const newReel1 = Math.floor(Math.random() * symbols.length);
-      setReels((prev) => [newReel1, prev[1], prev[2]]);
+      setReels((prev) => [finalReels[0], prev[1], prev[2]]);
       setReelSpinning((prev) => [false, prev[1], prev[2]]);
     }, 2000);
 
     // Reel 2 stops after 2.5 seconds
     setTimeout(() => {
-      const newReel2 = Math.floor(Math.random() * symbols.length);
-      setReels((prev) => [prev[0], newReel2, prev[2]]);
+      setReels((prev) => [finalReels[0], finalReels[1], prev[2]]);
       setReelSpinning((prev) => [prev[0], false, prev[2]]);
     }, 2500);
 
     // Reel 3 stops after 3 seconds
     setTimeout(() => {
-      const newReel3 = Math.floor(Math.random() * symbols.length);
-      const finalReels = [reels[0], reels[1], newReel3];
       setReels(finalReels);
-      setReelSpinning((prev) => [prev[0], prev[1], false]);
-
-      // Check for wins
+      setReelSpinning([false, false, false]);
       checkWin(finalReels);
       setSpinning(false);
     }, 3000);

@@ -143,7 +143,7 @@ export default function DiceGame() {
                   className={`py-4 rounded-lg font-bold text-lg transition ${
                     prediction === "high"
                       ? "bg-neon-green text-slate-950 border-2 border-neon-green"
-                      : "bg-slate-700 text-white border-2 border-slate-600 hover:border-neon-green/50"
+                      : "bg-blue-600 text-white border-2 border-slate-600 hover:border-neon-green/50"
                   } ${rolling ? "opacity-50 cursor-not-allowed" : ""}`}
                 >
                   HIGH (8-12)
@@ -156,7 +156,7 @@ export default function DiceGame() {
                   className={`py-4 rounded-lg font-bold text-lg transition ${
                     prediction === "low"
                       ? "bg-neon-pink text-slate-950 border-2 border-neon-pink"
-                      : "bg-slate-700 text-white border-2 border-slate-600 hover:border-neon-pink/50"
+                      : "bg-blue-600 text-white border-2 border-slate-600 hover:border-neon-pink/50"
                   } ${rolling ? "opacity-50 cursor-not-allowed" : ""}`}
                 >
                   LOW (2-6)
@@ -171,7 +171,7 @@ export default function DiceGame() {
                     <Button
                       onClick={() => setBet(Math.max(10, bet - 50))}
                       disabled={rolling}
-                      className="bg-slate-700 hover:bg-slate-600 text-white"
+                      className="bg-blue-600 hover:bg-blue-500 text-white"
                     >
                       -
                     </Button>
@@ -180,12 +180,12 @@ export default function DiceGame() {
                       value={bet}
                       onChange={(e) => setBet(Math.max(10, parseInt(e.target.value) || 10))}
                       disabled={rolling}
-                      className="w-24 bg-slate-700 text-white text-center rounded px-2 py-1 border border-slate-600"
+                      className="w-24 bg-blue-600 text-white text-center rounded px-2 py-1 border border-slate-600"
                     />
                     <Button
                       onClick={() => setBet(bet + 50)}
                       disabled={rolling}
-                      className="bg-slate-700 hover:bg-slate-600 text-white"
+                      className="bg-blue-600 hover:bg-blue-500 text-white"
                     >
                       +
                     </Button>
@@ -199,7 +199,7 @@ export default function DiceGame() {
                 whileTap={{ scale: rolling ? 1 : 0.95 }}
                 onClick={roll}
                 disabled={rolling}
-                className="w-full py-4 bg-gradient-to-r from-neon-green to-neon-green/80 hover:from-neon-green/90 hover:to-neon-green/70 disabled:opacity-50 disabled:cursor-not-allowed text-slate-950 font-bold text-xl rounded-lg transition shadow-lg shadow-neon-green/50"
+                className="w-full py-4 bg-gradient-to-r from-neon-green to-neon-green/80 hover:from-neon-green/90 hover:to-neon-green/70 disabled:opacity-50 disabled:cursor-not-allowed text-yellow-300 font-bold text-xl rounded-lg transition shadow-lg shadow-neon-green/50"
               >
                 {rolling ? "ROLLING..." : "ROLL DICE"}
               </motion.button>

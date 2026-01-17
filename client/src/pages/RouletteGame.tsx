@@ -78,17 +78,45 @@ export default function RouletteGame() {
               </h1>
               <p className="text-slate-400 mb-8">Pick a number and spin to win!</p>
 
+
               {/* Spinning Wheel */}
               <div className="flex justify-center mb-8 relative">
                 <motion.div
                   animate={spinning ? { rotate: 3600 } : {}}
                   transition={{ duration: 3, ease: "easeOut" }}
-                  className="w-80 h-80 rounded-full shadow-2xl shadow-neon-green/50 overflow-hidden border-4 border-neon-green/50"
+                  className="w-80 h-80 rounded-full shadow-2xl shadow-neon-green/50 overflow-hidden border-4 border-neon-green/50 bg-gradient-to-br from-red-900 to-black flex items-center justify-center"
                 >
-                  <img src="/images/roulette-wheel-3d.png" alt="Roulette Wheel" className="w-full h-full object-cover" />
+                  {/* Real Roulette Wheel SVG */}
+                  <svg viewBox="0 0 400 400" className="w-full h-full">
+                    {Array.from({ length: 37 }).map((_, i) => {
+                      const angle = (i / 37) * 360;
+                      const startAngle = (angle * Math.PI) / 180;
+                      const endAngle = (((angle + 360 / 37) * Math.PI) / 180);
+                      const isRed = [1, 3, 5, 7, 9, 12, 14, 16, 18, 19, 21, 23, 25, 27, 30, 32, 34, 36].includes(i);
+                      const color = i === 0 ? "#00FF00" : isRed ? "#FF0000" : "#000000";
+                      const x1 = 200 + 150 * Math.cos(startAngle);
+                      const y1 = 200 + 150 * Math.sin(startAngle);
+                      const x2 = 200 + 150 * Math.cos(endAngle);
+                      const y2 = 200 + 150 * Math.sin(endAngle);
+                      const path = `M 200 200 L ${x1} ${y1} A 150 150 0 0 1 ${x2} ${y2} Z`;
+                      const textAngle = (angle + 180 / 37) * (Math.PI / 180);
+                      const textX = 200 + 110 * Math.cos(textAngle);
+                      const textY = 200 + 110 * Math.sin(textAngle);
+                      return (
+                        <g key={i}>
+                          <path d={path} fill={color} stroke="#FFD700" strokeWidth="2" />
+                          <text x={textX} y={textY} textAnchor="middle" dominantBaseline="middle" fontSize="12" fontWeight="bold" fill="white">
+                            {i}
+                          </text>
+                        </g>
+                      );
+                    })}
+                    <circle cx="200" cy="200" r="30" fill="#FFD700" stroke="#00FF00" strokeWidth="3" />
+                    <circle cx="200" cy="200" r="20" fill="#000000" />
+                    <polygon points="200,50 190,80 210,80" fill="#FFD700" stroke="#00FF00" strokeWidth="2" />
+                  </svg>
                 </motion.div>
               </div>
-
               {/* Message */}
               {message && (
                 <motion.div
@@ -118,7 +146,7 @@ export default function RouletteGame() {
                       className={`py-2 rounded font-bold transition ${
                         selectedNumber === num
                           ? "bg-neon-green text-slate-950 border-2 border-neon-green"
-                          : "bg-slate-700 text-white border-2 border-slate-600 hover:border-neon-green/50"
+                          : "bg-blue-600 text-white border-2 border-slate-600 hover:border-neon-green/50"
                       } ${spinning ? "opacity-50 cursor-not-allowed" : ""}`}
                     >
                       {num}
@@ -135,7 +163,7 @@ export default function RouletteGame() {
                     <Button
                       onClick={() => setBet(Math.max(10, bet - 50))}
                       disabled={spinning}
-                      className="bg-slate-700 hover:bg-slate-600 text-white"
+                      className="bg-blue-600 hover:bg-blue-500 text-white"
                     >
                       -
                     </Button>
@@ -144,12 +172,12 @@ export default function RouletteGame() {
                       value={bet}
                       onChange={(e) => setBet(Math.max(10, parseInt(e.target.value) || 10))}
                       disabled={spinning}
-                      className="w-24 bg-slate-700 text-white text-center rounded px-2 py-1 border border-slate-600"
+                      className="w-24 bg-blue-600 text-white text-center rounded px-2 py-1 border border-slate-600"
                     />
                     <Button
                       onClick={() => setBet(bet + 50)}
                       disabled={spinning}
-                      className="bg-slate-700 hover:bg-slate-600 text-white"
+                      className="bg-blue-600 hover:bg-blue-500 text-white"
                     >
                       +
                     </Button>
@@ -163,7 +191,7 @@ export default function RouletteGame() {
                 whileTap={{ scale: spinning ? 1 : 0.95 }}
                 onClick={spin}
                 disabled={spinning}
-                className="w-full py-4 bg-gradient-to-r from-neon-green to-neon-green/80 hover:from-neon-green/90 hover:to-neon-green/70 disabled:opacity-50 disabled:cursor-not-allowed text-slate-950 font-bold text-xl rounded-lg transition shadow-lg shadow-neon-green/50"
+                className="w-full py-4 bg-gradient-to-r from-neon-green to-neon-green/80 hover:from-neon-green/90 hover:to-neon-green/70 disabled:opacity-50 disabled:cursor-not-allowed text-yellow-300 font-bold text-xl rounded-lg transition shadow-lg shadow-neon-green/50"
               >
                 {spinning ? "SPINNING..." : "SPIN WHEEL"}
               </motion.button>

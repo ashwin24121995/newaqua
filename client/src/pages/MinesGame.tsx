@@ -148,7 +148,7 @@ export default function MinesGame() {
                     <Button
                       onClick={() => setBet(Math.max(10, bet - 50))}
                       disabled={gameActive}
-                      className="bg-slate-700 hover:bg-slate-600 text-white"
+                      className="bg-blue-600 hover:bg-blue-500 text-white"
                     >
                       -
                     </Button>
@@ -157,12 +157,12 @@ export default function MinesGame() {
                       value={bet}
                       onChange={(e) => setBet(Math.max(10, parseInt(e.target.value) || 10))}
                       disabled={gameActive}
-                      className="w-24 bg-slate-700 text-white text-center rounded px-2 py-1 border border-slate-600"
+                      className="w-24 bg-blue-600 text-white text-center rounded px-2 py-1 border border-slate-600"
                     />
                     <Button
                       onClick={() => setBet(bet + 50)}
                       disabled={gameActive}
-                      className="bg-slate-700 hover:bg-slate-600 text-white"
+                      className="bg-blue-600 hover:bg-blue-500 text-white"
                     >
                       +
                     </Button>
@@ -177,7 +177,7 @@ export default function MinesGame() {
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     onClick={startGame}
-                    className="flex-1 py-4 bg-gradient-to-r from-neon-green to-neon-green/80 hover:from-neon-green/90 hover:to-neon-green/70 text-slate-950 font-bold text-xl rounded-lg transition shadow-lg shadow-neon-green/50"
+                    className="flex-1 py-4 bg-gradient-to-r from-neon-green to-neon-green/80 hover:from-neon-green/90 hover:to-neon-green/70 text-yellow-300 font-bold text-xl rounded-lg transition shadow-lg shadow-neon-green/50"
                   >
                     START GAME
                   </motion.button>
@@ -187,7 +187,7 @@ export default function MinesGame() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       onClick={cashOut}
-                      className="flex-1 py-4 bg-gradient-to-r from-neon-green to-neon-green/80 hover:from-neon-green/90 hover:to-neon-green/70 text-slate-950 font-bold text-xl rounded-lg transition shadow-lg shadow-neon-green/50"
+                      className="flex-1 py-4 bg-gradient-to-r from-neon-green to-neon-green/80 hover:from-neon-green/90 hover:to-neon-green/70 text-yellow-300 font-bold text-xl rounded-lg transition shadow-lg shadow-neon-green/50"
                     >
                       CASH OUT
                     </motion.button>
