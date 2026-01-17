@@ -17,11 +17,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* Column 1: Logo & About */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#00FF88] to-[#00cc6f] rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-[#0a0e27] font-bold">AC</span>
-              </div>
-              <h3 className="font-bold text-lg text-white">Aquastruct</h3>
+            <div className="mb-4">
+              <img src="/images/aquastruct-logo.png" alt="Aquastruct" className="h-16 w-auto mb-2" />
             </div>
             <p className="text-white/80 text-sm mb-4">
               Premium social casino entertainment platform offering virtual games with no real money involved.
