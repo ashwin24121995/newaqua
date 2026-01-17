@@ -1,3 +1,4 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -5,6 +6,7 @@ import { Card } from "@/components/ui/card";
 import { Award, Target, Heart, Zap, Users, Gamepad2, Shield, TrendingUp } from "lucide-react";
 
 export default function About() {
+  useScrollToTop();
   const values = [
     { icon: Target, title: "Transparency", desc: "Clear odds and fair mechanics in every game" },
     { icon: Heart, title: "Safety", desc: "Secure and responsible gaming environment" },

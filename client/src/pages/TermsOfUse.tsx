@@ -1,7 +1,9 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import { Link } from "wouter";
 import { AlertCircle, CheckCircle, XCircle, Scale } from "lucide-react";
 
 export default function TermsOfUse() {
+  useScrollToTop();
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a0e27] to-[#1a0f3a] text-white">
       {/* Header */}

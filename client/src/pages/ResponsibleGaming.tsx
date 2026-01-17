@@ -1,7 +1,9 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import { Link } from "wouter";
 import { AlertCircle, Heart, Shield, HelpCircle } from "lucide-react";
 
 export default function ResponsibleGaming() {
+  useScrollToTop();
   return (
     <div className="min-h-screen bg-[#0a0e27]">
       {/* Header */}

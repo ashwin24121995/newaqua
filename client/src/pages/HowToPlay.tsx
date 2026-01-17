@@ -1,3 +1,4 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
@@ -5,6 +6,7 @@ import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 export default function HowToPlay() {
+  useScrollToTop();
   const [expandedGame, setExpandedGame] = useState(0);
 
   const games = [

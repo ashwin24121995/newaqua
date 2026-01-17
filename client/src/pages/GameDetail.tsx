@@ -1,9 +1,11 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { useRoute } from "wouter";
 
 export default function GameDetail() {
+  useScrollToTop();
   const [match, params] = useRoute("/games/:gameId");
   const gameId = params?.gameId;
 

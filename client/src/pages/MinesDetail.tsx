@@ -1,7 +1,9 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import { useLocation } from 'wouter';
 import { Button } from '@/components/ui/button';
 
 export default function MinesDetail() {
+  useScrollToTop();
   const [, setLocation] = useLocation();
 
   return (

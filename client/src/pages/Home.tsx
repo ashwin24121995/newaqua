@@ -1,3 +1,4 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -23,6 +24,7 @@ import {
  */
 
 export default function Home() {
+  useScrollToTop();
   const features = [
     {
       icon: Zap,

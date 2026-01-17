@@ -1,3 +1,4 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import { getSoundGenerator } from "@/lib/soundGenerator";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -9,6 +10,7 @@ import { ArrowLeft, Zap } from "lucide-react";
 import { useLocation } from "wouter";
 
 export default function PokerGame() {
+  useScrollToTop();
   const [, setLocation] = useLocation();
   const [coins, setCoins] = useState(5000);
   const [bet, setBet] = useState(100);

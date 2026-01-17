@@ -1,9 +1,11 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card } from "@/components/ui/card";
 import { AlertCircle, Heart, Shield } from "lucide-react";
 
 export default function Responsible() {
+  useScrollToTop();
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />

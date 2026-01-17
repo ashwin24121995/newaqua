@@ -1,3 +1,4 @@
+import { useScrollToTop } from '@/hooks/useScrollToTop';
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -9,6 +10,7 @@ import { useLocation } from "wouter";
 import { getSoundGenerator } from "@/lib/soundGenerator";
 
 export default function SlotGame() {
+  useScrollToTop();
   const [, setLocation] = useLocation();
   const [coins, setCoins] = useState(5000);
   const [bet, setBet] = useState(100);
