@@ -40,10 +40,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <a className="flex items-center gap-2 text-white font-bold text-2xl hover:text-[#00FF88] transition-all duration-300 hover:drop-shadow-lg">
-              <div className="w-8 h-8 bg-gradient-to-br from-[#00FF88] to-[#00cc6f] rounded-lg flex items-center justify-center shadow-lg neon-glow">
-                <span className="text-[#0a0e27] font-bold">AC</span>
-              </div>
-              <span>Aquastruct</span>
+              <img src="/images/aquastruct-logo.png" alt="Aquastruct" className="h-12 w-auto" />
             </a>
           </Link>
 
