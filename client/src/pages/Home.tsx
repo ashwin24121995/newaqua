@@ -208,10 +208,12 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="btn-neon">
-                  <Play size={20} className="mr-2 inline" />
-                  Play Now
-                </button>
+                <Link href="/play/slots">
+                  <button className="btn-neon">
+                    <Play size={20} className="mr-2 inline" />
+                    Play Now
+                  </button>
+                </Link>
                 <Link href="/how-to-play">
                   <button className="px-6 py-3 font-bold rounded-lg border-2 border-[#00FF88] text-[#00FF88] hover:bg-[#00FF88]/10 transition-all duration-300">
                     How It Works
@@ -370,7 +372,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">{game.name}</h3>
                 <p className="text-white/70 mb-4">{game.description}</p>
-                <Link href={`/game-detail/${game.id}`}>
+                                <Link href={`/play/${game.id}`}>
                   <button className="w-full btn-neon text-sm">
                     Play Now
                   </button>

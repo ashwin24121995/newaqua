@@ -114,7 +114,7 @@ export default function Games() {
                   <p className="text-white/70 mb-6">{game.desc}</p>
 
                   {/* Play Button */}
-                  <Link href={`/game-detail/${game.id}`}>
+                  <Link href={`/play/${game.id}`}>
                     <button className="w-full btn-neon">
                       Play Now
                     </button>
