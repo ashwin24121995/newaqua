@@ -19,7 +19,7 @@ import {
 /**
  * Home Page - Premium Dark Casino Landing
  * Design: Dark theme with neon accents, gradient overlays, and smooth animations
- * Sections: Hero, Why Choose Us, How It Works, Featured Games, Platform Philosophy, Footer
+ * Sections: Hero with image, Why Choose Us, How It Works, Featured Games, Platform Philosophy, Footer
  */
 
 export default function Home() {
@@ -61,19 +61,37 @@ export default function Home() {
       id: "slots",
       name: "Slot Machines",
       description: "Classic slot machine experience with exciting themes and big wins.",
-      image: "🎰",
+      image: "/images/game-slots-premium.png",
     },
     {
       id: "poker",
       name: "Poker Tables",
       description: "Strategic card game where skill meets luck. Challenge opponents worldwide.",
-      image: "🃏",
+      image: "/images/game-poker-premium.png",
     },
     {
       id: "roulette",
       name: "Roulette",
       description: "Spin the wheel and test your luck. Multiple betting options available.",
-      image: "🎡",
+      image: "/images/game-roulette-premium.png",
+    },
+    {
+      id: "dice",
+      name: "Dice Games",
+      description: "Roll the dice and win big. Simple rules, exciting gameplay.",
+      image: "/images/game-dice-premium.png",
+    },
+    {
+      id: "mines",
+      name: "Mines",
+      description: "Navigate the minefield and multiply your winnings strategically.",
+      image: "/images/game-mines-premium.png",
+    },
+    {
+      id: "chicken",
+      name: "Chicken Run",
+      description: "Chase the chicken and catch multipliers. Fast-paced and fun.",
+      image: "/images/game-chicken-premium.png",
     },
   ];
 
@@ -124,8 +142,18 @@ export default function Home() {
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
 
-      {/* Hero Section - Dark Theme with Neon Accents */}
+      {/* Hero Section - Dark Theme with Hero Image */}
       <section className="relative bg-gradient-to-br from-[#0a0e27] via-[#1a0f3a] to-[#0a0e27] text-white overflow-hidden py-20 md:py-32">
+        {/* Background Image with Overlay */}
+        <div className="absolute inset-0 opacity-30">
+          <img 
+            src="/images/hero-casino-chips.png" 
+            alt="Casino Background" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0a0e27] via-transparent to-[#0a0e27]"></div>
+        </div>
+
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 right-20 w-96 h-96 bg-[#00FF88] rounded-full blur-3xl animate-pulse"></div>
@@ -196,26 +224,27 @@ export default function Home() {
               </p>
             </motion.div>
 
-            {/* Right Column: Game Categories Grid */}
+            {/* Right Column: Featured Game Cards */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               className="grid grid-cols-2 gap-4"
             >
-              {[
-                { emoji: "🎰", name: "Slots" },
-                { emoji: "🃏", name: "Poker" },
-                { emoji: "🎡", name: "Roulette" },
-                { emoji: "🎲", name: "Dice" },
-              ].map((game, i) => (
+              {games.slice(0, 4).map((game, i) => (
                 <motion.div
                   key={i}
                   whileHover={{ scale: 1.08, y: -8 }}
-                  className="game-card"
+                  className="game-card-image relative overflow-hidden rounded-lg"
                 >
-                  <div className="text-5xl mb-3">{game.emoji}</div>
-                  <p className="font-semibold text-lg text-white">{game.name}</p>
+                  <img 
+                    src={game.image} 
+                    alt={game.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-3">
+                    <p className="font-semibold text-sm text-white">{game.name}</p>
+                  </div>
                 </motion.div>
               ))}
             </motion.div>
@@ -275,10 +304,12 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold mb-4 text-white">How It Works</h2>
-            <p className="text-lg text-white/70">Get started in just 4 simple steps</p>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+              Get started in just 4 simple steps
+            </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, i) => (
               <motion.div
                 key={i}
@@ -286,21 +317,13 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className="relative"
+                className="text-center"
               >
-                <div className="flex flex-col items-center">
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    className="w-16 h-16 rounded-full bg-gradient-to-br from-[#7B2CBF] to-[#00FF88] flex items-center justify-center mb-4 neon-glow"
-                  >
-                    <span className="text-2xl font-bold text-white">{step.number}</span>
-                  </motion.div>
-                  <h3 className="text-lg font-bold text-white mb-2 text-center">{step.title}</h3>
-                  <p className="text-white/70 text-center text-sm">{step.description}</p>
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#00FF88] to-[#00cc6f] flex items-center justify-center mx-auto mb-4 shadow-lg">
+                  <span className="text-2xl font-bold text-[#0a0e27]">{step.number}</span>
                 </div>
-                {i < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-8 -right-4 w-8 h-1 bg-gradient-to-r from-[#00FF88] to-transparent"></div>
-                )}
+                <h3 className="text-xl font-bold mb-2 text-white">{step.title}</h3>
+                <p className="text-white/70">{step.description}</p>
               </motion.div>
             ))}
           </div>
@@ -318,7 +341,9 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl font-bold mb-4 text-white">Featured Games</h2>
-            <p className="text-lg text-white/70">Start with our most popular games</p>
+            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+              Start with our most popular games
+            </p>
           </motion.div>
 
           <motion.div
@@ -326,33 +351,47 @@ export default function Home() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8"
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {games.map((game) => (
+            {games.map((game, i) => (
               <motion.div
-                key={game.id}
+                key={i}
                 variants={itemVariants}
+                whileHover={{ y: -8 }}
                 className="card-premium overflow-hidden group"
               >
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {game.image}
+                <div className="relative h-48 overflow-hidden rounded-lg mb-4">
+                  <img 
+                    src={game.image} 
+                    alt={game.name}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 </div>
-                <h3 className="text-2xl font-bold mb-2 text-white">{game.name}</h3>
-                <p className="text-white/70 mb-6">{game.description}</p>
-                <button className="btn-neon w-full">
-                  Play Now
-                </button>
+                <h3 className="text-xl font-bold mb-2 text-white">{game.name}</h3>
+                <p className="text-white/70 mb-4">{game.description}</p>
+                <Link href={`/games?category=${game.id}`}>
+                  <button className="w-full btn-neon text-sm">
+                    Play Now
+                  </button>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
 
-          <div className="text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="text-center mt-12"
+          >
             <Link href="/games">
               <button className="px-8 py-3 font-bold rounded-lg border-2 border-[#00FF88] text-[#00FF88] hover:bg-[#00FF88]/10 transition-all duration-300">
                 View All Games
               </button>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -360,6 +399,7 @@ export default function Home() {
       <section className="py-20 bg-gradient-to-b from-[#1a0f3a] to-[#0a0e27]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Left Column */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -367,58 +407,79 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <h2 className="text-4xl font-bold mb-6 text-white">Our Platform Philosophy</h2>
-              <p className="text-white/80 mb-4 leading-relaxed">
+              <p className="text-lg text-white/80 mb-4">
                 We believe entertainment should be accessible to everyone without financial risk. Our platform is built on the principles of transparency, fairness, and responsible gaming.
               </p>
-              <p className="text-white/80 mb-6 leading-relaxed">
+              <p className="text-lg text-white/80 mb-6">
                 Every game is designed to be fun first, with clear odds and mechanics. We prioritize player safety and provide tools for responsible gaming.
               </p>
               <ul className="space-y-3">
-                <li className="flex items-center gap-3 text-white/80">
-                  <Sparkles className="text-[#00FF88]" size={20} />
-                  100% free gaming with no hidden costs
+                <li className="flex items-start gap-3">
+                  <Sparkles className="text-[#00FF88] flex-shrink-0 mt-1" size={20} />
+                  <span className="text-white/80">100% free gaming with no hidden costs</span>
                 </li>
-                <li className="flex items-center gap-3 text-white/80">
-                  <Sparkles className="text-[#00FF88]" size={20} />
-                  Fair and transparent game mechanics
+                <li className="flex items-start gap-3">
+                  <Sparkles className="text-[#00FF88] flex-shrink-0 mt-1" size={20} />
+                  <span className="text-white/80">Fair and transparent game mechanics</span>
                 </li>
-                <li className="flex items-center gap-3 text-white/80">
-                  <Sparkles className="text-[#00FF88]" size={20} />
-                  Secure account protection
+                <li className="flex items-start gap-3">
+                  <Sparkles className="text-[#00FF88] flex-shrink-0 mt-1" size={20} />
+                  <span className="text-white/80">Secure account protection</span>
                 </li>
-                <li className="flex items-center gap-3 text-white/80">
-                  <Sparkles className="text-[#00FF88]" size={20} />
-                  Responsive customer support
+                <li className="flex items-start gap-3">
+                  <Sparkles className="text-[#00FF88] flex-shrink-0 mt-1" size={20} />
+                  <span className="text-white/80">Responsive customer support</span>
                 </li>
               </ul>
             </motion.div>
 
+            {/* Right Column */}
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
               className="space-y-6"
             >
               <div className="card-premium">
-                <h3 className="text-xl font-bold mb-3 text-[#00FF88]">Responsible Gaming Commitment</h3>
-                <p className="text-white/80">We're dedicated to promoting safe and responsible gaming practices.</p>
-                <ul className="mt-4 space-y-2 text-white/70 text-sm">
-                  <li>✓ Age verification (18+ only)</li>
-                  <li>✓ Self-exclusion options available</li>
-                  <li>✓ Time management tools</li>
-                  <li>✓ Links to gambling addiction support</li>
+                <h3 className="text-2xl font-bold mb-4 text-[#00FF88]">Responsible Gaming Commitment</h3>
+                <p className="text-white/80 mb-4">
+                  We're dedicated to promoting safe and responsible gaming practices.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2 text-white/80">
+                    <span className="text-[#00FF88]">✓</span> Age verification (18+ only)
+                  </li>
+                  <li className="flex items-center gap-2 text-white/80">
+                    <span className="text-[#00FF88]">✓</span> Self-exclusion options available
+                  </li>
+                  <li className="flex items-center gap-2 text-white/80">
+                    <span className="text-[#00FF88]">✓</span> Time management tools
+                  </li>
+                  <li className="flex items-center gap-2 text-white/80">
+                    <span className="text-[#00FF88]">✓</span> Links to gambling addiction support
+                  </li>
                 </ul>
               </div>
 
               <div className="card-premium">
-                <h3 className="text-xl font-bold mb-3 text-[#FF006E]">Safety & Compliance</h3>
-                <p className="text-white/80">Your security and privacy are our top priorities.</p>
-                <ul className="mt-4 space-y-2 text-white/70 text-sm">
-                  <li>✓ Certified fair play algorithms</li>
-                  <li>✓ Data encryption and protection</li>
-                  <li>✓ Regular security audits</li>
-                  <li>✓ Transparent terms and conditions</li>
+                <h3 className="text-2xl font-bold mb-4 text-[#FF006E]">Safety & Compliance</h3>
+                <p className="text-white/80 mb-4">
+                  Your security and privacy are our top priorities.
+                </p>
+                <ul className="space-y-2">
+                  <li className="flex items-center gap-2 text-white/80">
+                    <span className="text-[#FF006E]">✓</span> Certified fair play algorithms
+                  </li>
+                  <li className="flex items-center gap-2 text-white/80">
+                    <span className="text-[#FF006E]">✓</span> Data encryption and protection
+                  </li>
+                  <li className="flex items-center gap-2 text-white/80">
+                    <span className="text-[#FF006E]">✓</span> Regular security audits
+                  </li>
+                  <li className="flex items-center gap-2 text-white/80">
+                    <span className="text-[#FF006E]">✓</span> Transparent terms and conditions
+                  </li>
                 </ul>
               </div>
             </motion.div>
