@@ -19,7 +19,7 @@ export default function MinesDetail() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-1">
             <div className="sticky top-20 bg-gradient-to-b from-[#1a1f3a] to-[#2a2f4a] rounded-lg p-6 border border-[#00FF88]/20">
-              <img src="/images/game-mines-premium.png" alt="Mines" className="w-full rounded-lg mb-6 object-cover h-64" />
+              <img src="/images/game-mines-premium.webp" alt="Mines" className="w-full rounded-lg mb-6 object-cover h-64" />
               <Button onClick={() => setLocation('/play/mines')} className="w-full bg-[#00FF88] hover:bg-[#00FF88]/80 text-black font-bold py-6 text-lg rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 neon-glow">🎮 PLAY NOW</Button>
               <div className="mt-6 p-4 bg-[#00FF88]/10 rounded-lg border border-[#00FF88]/30">
                 <p className="text-[#00FF88] text-sm font-semibold mb-2">Quick Stats:</p>

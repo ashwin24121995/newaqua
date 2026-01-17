@@ -18,7 +18,7 @@ export default function Footer() {
           {/* Column 1: Logo & About */}
           <div>
             <div className="mb-4">
-              <img src="/images/aquastruct-logo.png" alt="Aquastruct" className="h-16 w-auto mb-2" />
+              <img src="/images/aquastruct-logo.webp" alt="Aquastruct" className="h-16 w-auto mb-2" />
             </div>
             <p className="text-white/80 text-sm mb-4">
               Premium social casino entertainment platform offering virtual games with no real money involved.

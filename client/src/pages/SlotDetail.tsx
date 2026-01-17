@@ -103,7 +103,7 @@ export default function SlotDetail() {
           <div className="lg:col-span-1">
             <div className="sticky top-20 bg-gradient-to-b from-[#1a1f3a] to-[#2a2f4a] rounded-lg p-6 border border-[#00FF88]/20">
               <img
-                src="/images/game-slots-premium.png"
+                src="/images/game-slots-premium.webp"
                 alt="Slot Machines"
                 className="w-full rounded-lg mb-6 object-cover h-64"
               />

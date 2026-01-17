@@ -146,7 +146,7 @@ export default function SlotGame() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950 to-slate-950 flex flex-col" style={{ backgroundImage: "url('/images/bg-slots-game.png')", backgroundSize: "cover", backgroundAttachment: "fixed" }}>
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950 to-slate-950 flex flex-col" style={{ backgroundImage: "url('/images/bg-slots-game.webp')", backgroundSize: "cover", backgroundAttachment: "fixed" }}>
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-purple-950/85 to-slate-950/85 pointer-events-none" />
     <div className="relative z-10 min-h-screen flex flex-col">
       <Header />

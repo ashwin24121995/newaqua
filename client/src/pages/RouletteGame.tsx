@@ -57,7 +57,7 @@ export default function RouletteGame() {
   const numbers = Array.from({ length: 37 }, (_, i) => i);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950 to-slate-950 flex flex-col" style={{ backgroundImage: "url('/images/bg-roulette-game.png')", backgroundSize: "cover", backgroundAttachment: "fixed" }}>
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-purple-950 to-slate-950 flex flex-col" style={{ backgroundImage: "url('/images/bg-roulette-game.webp')", backgroundSize: "cover", backgroundAttachment: "fixed" }}>
       <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-purple-950/80 to-slate-950/80 pointer-events-none" />
     <div className="relative z-10 min-h-screen flex flex-col">
       <Header />

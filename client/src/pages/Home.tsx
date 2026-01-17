@@ -63,37 +63,37 @@ export default function Home() {
       id: "slots",
       name: "Slot Machines",
       description: "Classic slot machine experience with exciting themes and big wins.",
-      image: "/images/game-slots-premium.png",
+      image: "/images/game-slots-premium.webp",
     },
     {
       id: "poker",
       name: "Poker Tables",
       description: "Strategic card game where skill meets luck. Challenge opponents worldwide.",
-      image: "/images/game-poker-premium.png",
+      image: "/images/game-poker-premium.webp",
     },
     {
       id: "roulette",
       name: "Roulette",
       description: "Spin the wheel and test your luck. Multiple betting options available.",
-      image: "/images/game-roulette-premium.png",
+      image: "/images/game-roulette-premium.webp",
     },
     {
       id: "dice",
       name: "Dice Games",
       description: "Roll the dice and win big. Simple rules, exciting gameplay.",
-      image: "/images/game-dice-premium.png",
+      image: "/images/game-dice-premium.webp",
     },
     {
       id: "mines",
       name: "Mines",
       description: "Navigate the minefield and multiply your winnings strategically.",
-      image: "/images/game-mines-premium.png",
+      image: "/images/game-mines-premium.webp",
     },
     {
       id: "chicken",
       name: "Chicken Run",
       description: "Chase the chicken and catch multipliers. Fast-paced and fun.",
-      image: "/images/game-chicken-premium.png",
+      image: "/images/game-chicken-premium.webp",
     },
   ];
 
@@ -149,7 +149,7 @@ export default function Home() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 opacity-30">
           <img 
-            src="/images/hero-casino-chips.png" 
+            src="/images/hero-casino-chips.webp" 
             alt="Casino Background" 
             className="w-full h-full object-cover"
           />
