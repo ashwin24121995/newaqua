@@ -1,3 +1,4 @@
+import { getSoundGenerator } from "@/lib/soundGenerator";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -27,11 +28,14 @@ export default function RouletteGame() {
       return;
     }
 
+    const soundGen = getSoundGenerator();
+    soundGen.playGameStart();
     setSpinning(true);
     setCoins(coins - bet);
     setMessage("");
 
     setTimeout(() => {
+      soundGen.playRouletteSpinning();
       const winningNumber = Math.floor(Math.random() * 37);
       setResult(winningNumber);
 

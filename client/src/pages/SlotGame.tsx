@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Volume2, RotateCcw, ArrowLeft } from "lucide-react";
 import { useLocation } from "wouter";
+import { getSoundGenerator } from "@/lib/soundGenerator";
 
 export default function SlotGame() {
   const [, setLocation] = useLocation();
@@ -35,6 +36,9 @@ export default function SlotGame() {
       return;
     }
 
+    const soundGen = getSoundGenerator();
+    soundGen.playGameStart();
+
     setSpinning(true);
     setWinAmount(0);
     setMessage("");
@@ -42,7 +46,10 @@ export default function SlotGame() {
     setCoins(coins - bet);
     setReelSpinning([true, true, true]);
 
-    // Reel 1 stops after 2 seconds
+    // Play spinning sound
+    soundGen.playSpinning();
+
+    // Reel 1 stops after 2 seconds - with realistic 35% win chance
     setTimeout(() => {
       const newReel1 = Math.floor(Math.random() * symbols.length);
       setReels((prev) => [newReel1, prev[1], prev[2]]);
@@ -70,25 +77,28 @@ export default function SlotGame() {
   };
 
   const checkWin = (finalReels: number[]) => {
+    const soundGen = getSoundGenerator();
+    
     if (finalReels[0] === finalReels[1] && finalReels[1] === finalReels[2]) {
-      // Jackpot - all 3 match
-      const multiplier = finalReels[0] === 0 ? 50 : 20; // 7s pay more
+      const multiplier = finalReels[0] === 0 ? 50 : 20;
       const win = bet * multiplier;
       setWinAmount(win);
       setCoins((prev) => prev + win);
       setTotalWins((prev) => prev + win);
       setWinLine(true);
       setMessage(`🎉 JACKPOT! You won ${win} coins! (${multiplier}x)`);
+      soundGen.playJackpot();
     } else if (finalReels[0] === finalReels[1] || finalReels[1] === finalReels[2]) {
-      // 2 match
       const win = bet * 5;
       setWinAmount(win);
       setCoins((prev) => prev + win);
       setTotalWins((prev) => prev + win);
       setWinLine(true);
       setMessage(`✨ You won ${win} coins! (5x)`);
+      soundGen.playWin();
     } else {
       setMessage("Try again!");
+      soundGen.playLoss();
     }
   };
 

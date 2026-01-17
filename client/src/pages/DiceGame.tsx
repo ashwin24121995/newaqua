@@ -1,3 +1,4 @@
+import { getSoundGenerator } from "@/lib/soundGenerator";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -28,11 +29,14 @@ export default function DiceGame() {
       return;
     }
 
+    const soundGen = getSoundGenerator();
+    soundGen.playGameStart();
     setRolling(true);
     setCoins(coins - bet);
     setMessage("");
 
     setTimeout(() => {
+      soundGen.playDiceRoll();
       const d1 = Math.floor(Math.random() * 6) + 1;
       const d2 = Math.floor(Math.random() * 6) + 1;
       const total = d1 + d2;
@@ -47,13 +51,16 @@ export default function DiceGame() {
       if (isDraw) {
         setCoins((prev) => prev + bet);
         setMessage("🤝 Draw! Total is 7. Bet returned.");
+        soundGen.playCoins();
       } else if ((prediction === "high" && isHigh) || (prediction === "low" && isLow)) {
         const winAmount = bet * 2;
         setCoins((prev) => prev + winAmount);
         setTotalWins((prev) => prev + winAmount);
         setMessage(`🎉 You win! Total: ${total} - Won ${winAmount} coins!`);
+        soundGen.playWin();
       } else {
         setMessage(`❌ You lose! Total: ${total}`);
+        soundGen.playLoss();
       }
 
       setRolling(false);
