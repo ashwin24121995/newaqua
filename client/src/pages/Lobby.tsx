@@ -17,7 +17,7 @@ export default function Lobby() {
       icon: "🎰",
       activePlayers: 234,
       maxPlayers: 500,
-      avgWinnings: "$2,450",
+      avgWinnings: "2,450 Coins",
       rooms: [
         { id: 1, name: "Classic Slots", players: 45, maxPlayers: 50, minBet: 10, maxBet: 1000 },
         { id: 2, name: "Mega Jackpot", players: 38, maxPlayers: 50, minBet: 50, maxBet: 5000 },
@@ -32,7 +32,7 @@ export default function Lobby() {
       icon: "🃏",
       activePlayers: 156,
       maxPlayers: 300,
-      avgWinnings: "$3,890",
+      avgWinnings: "3,890 Coins",
       rooms: [
         { id: 1, name: "Texas Hold'em - Low Stakes", players: 32, maxPlayers: 8, minBet: 10, maxBet: 100 },
         { id: 2, name: "Texas Hold'em - Mid Stakes", players: 28, maxPlayers: 8, minBet: 100, maxBet: 1000 },
@@ -47,7 +47,7 @@ export default function Lobby() {
       icon: "🎡",
       activePlayers: 189,
       maxPlayers: 400,
-      avgWinnings: "$1,920",
+      avgWinnings: "1,920 Coins",
       rooms: [
         { id: 1, name: "European Roulette", players: 42, maxPlayers: 100, minBet: 10, maxBet: 5000 },
         { id: 2, name: "American Roulette", players: 38, maxPlayers: 100, minBet: 15, maxBet: 7500 },
@@ -62,7 +62,7 @@ export default function Lobby() {
       icon: "🎲",
       activePlayers: 142,
       maxPlayers: 250,
-      avgWinnings: "$1,650",
+      avgWinnings: "1,650 Coins",
       rooms: [
         { id: 1, name: "Craps - Casual", players: 35, maxPlayers: 50, minBet: 10, maxBet: 500 },
         { id: 2, name: "Craps - Competitive", players: 28, maxPlayers: 50, minBet: 50, maxBet: 5000 },
