@@ -2,8 +2,8 @@ import { Link } from "wouter";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 /**
- * Footer Component - Premium Footer with Company Information
- * Design: Dark purple background with gold accents
+ * Footer Component - Premium Dark Casino Footer
+ * Design: Dark gradient background with neon accents
  * Layout: 5-column footer with company details, links, and contact info
  */
 
@@ -11,17 +11,17 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-primary text-white">
+    <footer className="bg-gradient-to-t from-[#0a0e27] to-[#1a0f3a] border-t border-[#00FF88]/20 text-white">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           {/* Column 1: Logo & About */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
-                <span className="text-primary font-bold">AC</span>
+              <div className="w-10 h-10 bg-gradient-to-br from-[#00FF88] to-[#00cc6f] rounded-lg flex items-center justify-center shadow-lg">
+                <span className="text-[#0a0e27] font-bold">AC</span>
               </div>
-              <h3 className="font-bold text-lg">Aquastruct</h3>
+              <h3 className="font-bold text-lg text-white">Aquastruct</h3>
             </div>
             <p className="text-white/80 text-sm mb-4">
               Premium social casino entertainment platform offering virtual games with no real money involved.
@@ -33,31 +33,31 @@ export default function Footer() {
 
           {/* Column 2: Quick Links */}
           <div>
-            <h4 className="font-semibold text-accent mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-[#00FF88] mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/">
-                  <a className="text-white/80 hover:text-accent transition-colors">Home</a>
+                  <a className="text-white/80 hover:text-[#00FF88] transition-all duration-300">Home</a>
                 </Link>
               </li>
               <li>
                 <Link href="/about">
-                  <a className="text-white/80 hover:text-accent transition-colors">About Us</a>
+                  <a className="text-white/80 hover:text-[#00FF88] transition-all duration-300">About Us</a>
                 </Link>
               </li>
               <li>
                 <Link href="/how-to-play">
-                  <a className="text-white/80 hover:text-accent transition-colors">How to Play</a>
+                  <a className="text-white/80 hover:text-[#00FF88] transition-all duration-300">How to Play</a>
                 </Link>
               </li>
               <li>
                 <Link href="/contact">
-                  <a className="text-white/80 hover:text-accent transition-colors">Contact</a>
+                  <a className="text-white/80 hover:text-[#00FF88] transition-all duration-300">Contact</a>
                 </Link>
               </li>
               <li>
                 <Link href="/faq">
-                  <a className="text-white/80 hover:text-accent transition-colors">FAQ</a>
+                  <a className="text-white/80 hover:text-[#00FF88] transition-all duration-300">FAQ</a>
                 </Link>
               </li>
             </ul>
@@ -65,36 +65,36 @@ export default function Footer() {
 
           {/* Column 3: Games Links */}
           <div>
-            <h4 className="font-semibold text-accent mb-4">Games</h4>
+            <h4 className="font-semibold text-[#FF006E] mb-4">Games</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/games?category=slots">
-                  <a className="text-white/80 hover:text-accent transition-colors">Slots</a>
+                  <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Slots</a>
                 </Link>
               </li>
               <li>
                 <Link href="/games?category=poker">
-                  <a className="text-white/80 hover:text-accent transition-colors">Poker</a>
+                  <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Poker</a>
                 </Link>
               </li>
               <li>
                 <Link href="/games?category=roulette">
-                  <a className="text-white/80 hover:text-accent transition-colors">Roulette</a>
+                  <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Roulette</a>
                 </Link>
               </li>
               <li>
                 <Link href="/games?category=dice">
-                  <a className="text-white/80 hover:text-accent transition-colors">Dice</a>
+                  <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Dice</a>
                 </Link>
               </li>
               <li>
                 <Link href="/games?category=mines">
-                  <a className="text-white/80 hover:text-accent transition-colors">Mines</a>
+                  <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Mines</a>
                 </Link>
               </li>
               <li>
                 <Link href="/games?category=chicken">
-                  <a className="text-white/80 hover:text-accent transition-colors">Chicken</a>
+                  <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Chicken</a>
                 </Link>
               </li>
             </ul>
@@ -102,61 +102,81 @@ export default function Footer() {
 
           {/* Column 4: Legal & Support */}
           <div>
-            <h4 className="font-semibold text-accent mb-4">Legal & Support</h4>
+            <h4 className="font-semibold text-[#FFD700] mb-4">Legal & Support</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/fair-play">
-                  <a className="text-white/80 hover:text-accent transition-colors">Fair Play</a>
+                  <a className="text-white/80 hover:text-[#FFD700] transition-all duration-300">Fair Play</a>
                 </Link>
               </li>
               <li>
                 <Link href="/responsible-gaming">
-                  <a className="text-white/80 hover:text-accent transition-colors">Responsible Gaming</a>
+                  <a className="text-white/80 hover:text-[#FFD700] transition-all duration-300">Responsible Gaming</a>
                 </Link>
               </li>
               <li>
                 <Link href="/privacy">
-                  <a className="text-white/80 hover:text-accent transition-colors">Privacy Policy</a>
+                  <a className="text-white/80 hover:text-[#FFD700] transition-all duration-300">Privacy Policy</a>
                 </Link>
               </li>
               <li>
                 <Link href="/terms">
-                  <a className="text-white/80 hover:text-accent transition-colors">Terms of Use</a>
+                  <a className="text-white/80 hover:text-[#FFD700] transition-all duration-300">Terms of Use</a>
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 5: Company Details */}
+          {/* Column 5: Contact Info */}
           <div>
-            <h4 className="font-semibold text-accent mb-4">Contact Info</h4>
-            <div className="space-y-3 text-sm">
-              <div className="flex gap-2">
-                <Mail size={16} className="text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-white/80">Support@playaquacasino.com</span>
-              </div>
-              <div className="flex gap-2">
-                <MapPin size={16} className="text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-white/80 text-xs">
+            <h4 className="font-semibold text-[#00FF88] mb-4">Contact Info</h4>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-start gap-3">
+                <Mail size={18} className="text-[#00FF88] flex-shrink-0 mt-0.5" />
+                <a href="mailto:Support@playaquacasino.com" className="text-white/80 hover:text-[#00FF88] transition-all duration-300">
+                  Support@playaquacasino.com
+                </a>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin size={18} className="text-[#FF006E] flex-shrink-0 mt-0.5" />
+                <span className="text-white/80">
                   Udhampur, Jammu and Kashmir 182320, India
                 </span>
-              </div>
-              <div className="pt-2 border-t border-white/20">
-                <p className="text-white/60 text-xs font-semibold">CIN: U41001JK2023PTC014834</p>
-                <p className="text-white/60 text-xs">PAN: AAZCA0661R</p>
-              </div>
-            </div>
+              </li>
+              <li className="flex items-start gap-3">
+                <Phone size={18} className="text-[#FFD700] flex-shrink-0 mt-0.5" />
+                <span className="text-white/80">
+                  Available 24/7
+                </span>
+              </li>
+            </ul>
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-white/20 pt-6">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-white/70">
-            <p>
-              © {currentYear} Aquastruct Construction Private Limited. All rights reserved.
-            </p>
-            <p className="text-xs">
-              This platform is for entertainment purposes only. Players must be 18+ years old. No real money is involved.
+        {/* Divider */}
+        <div className="border-t border-[#00FF88]/20 pt-8 mt-8">
+          {/* Company Details */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <h4 className="font-semibold text-[#00FF88] mb-3">Company Information</h4>
+              <p className="text-white/80 text-sm space-y-1">
+                <div>CIN: U41001JK2023PTC014834</div>
+                <div>PAN: AAZCA0661R</div>
+              </p>
+            </div>
+            <div>
+              <h4 className="font-semibold text-[#FF006E] mb-3">Compliance</h4>
+              <p className="text-white/80 text-sm">
+                This platform is for entertainment purposes only. Players must be 18+ years old. No real money is involved.
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom Copyright */}
+          <div className="text-center pt-6 border-t border-[#00FF88]/10">
+            <p className="text-white/60 text-xs">
+              © {currentYear} Aquastruct Construction Private Limited. All rights reserved. | 
+              <span className="text-[#00FF88] ml-1">Responsible Gaming Commitment</span>
             </p>
           </div>
         </div>

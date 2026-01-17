@@ -8,51 +8,51 @@
   --color-primary: #7B2CBF;
   --color-primary-foreground: #FFFFFF;
   
-  /* Accent Color - Gold */
-  --color-accent: #FFD700;
-  --color-accent-foreground: #1a1a1a;
+  /* Accent Colors - Neon & Gold */
+  --color-accent: #00FF88;
+  --color-accent-foreground: #0a0e27;
   
-  /* Secondary Colors */
-  --color-secondary: #F5F3FF;
-  --color-secondary-foreground: #1a1a1a;
+  /* Secondary - Neon Pink/Magenta */
+  --color-secondary: #FF006E;
+  --color-secondary-foreground: #FFFFFF;
   
-  /* Neutral Colors */
-  --color-background: #FFFFFF;
-  --color-foreground: #1a1a1a;
-  --color-card: #FFFFFF;
-  --color-card-foreground: #1a1a1a;
-  --color-popover: #FFFFFF;
-  --color-popover-foreground: #1a1a1a;
+  /* Neutral Colors - Dark Theme */
+  --color-background: #0a0e27;
+  --color-foreground: #E0E0FF;
+  --color-card: #1a1f3a;
+  --color-card-foreground: #E0E0FF;
+  --color-popover: #1a1f3a;
+  --color-popover-foreground: #E0E0FF;
   
   /* Muted Colors */
-  --color-muted: #F3F4F6;
-  --color-muted-foreground: #6B7280;
+  --color-muted: #2a2f4a;
+  --color-muted-foreground: #8a8aaa;
   
   /* Border and Input */
-  --color-border: #E5E7EB;
-  --color-input: #E5E7EB;
-  --color-ring: #7B2CBF;
+  --color-border: #2a2f4a;
+  --color-input: #1a1f3a;
+  --color-ring: #00FF88;
   
   /* Destructive */
-  --color-destructive: #EF4444;
+  --color-destructive: #FF4444;
   --color-destructive-foreground: #FFFFFF;
   
-  /* Chart Colors - Purple Gradient */
+  /* Chart Colors - Purple to Neon Gradient */
   --color-chart-1: #7B2CBF;
   --color-chart-2: #9D4EDD;
-  --color-chart-3: #C77DFF;
-  --color-chart-4: #E0AAFF;
-  --color-chart-5: #F3E5FF;
+  --color-chart-3: #00FF88;
+  --color-chart-4: #FF006E;
+  --color-chart-5: #FFD700;
   
   /* Sidebar */
-  --color-sidebar: #FFFFFF;
-  --color-sidebar-foreground: #1a1a1a;
+  --color-sidebar: #0f1428;
+  --color-sidebar-foreground: #E0E0FF;
   --color-sidebar-primary: #7B2CBF;
   --color-sidebar-primary-foreground: #FFFFFF;
-  --color-sidebar-accent: #FFD700;
-  --color-sidebar-accent-foreground: #1a1a1a;
-  --color-sidebar-border: #E5E7EB;
-  --color-sidebar-ring: #7B2CBF;
+  --color-sidebar-accent: #00FF88;
+  --color-sidebar-accent-foreground: #0a0e27;
+  --color-sidebar-border: #2a2f4a;
+  --color-sidebar-ring: #00FF88;
   
   /* Radius */
   --radius: 0.65rem;
@@ -85,22 +85,12 @@
 @layer components {
   /**
    * Custom container utility that centers content and adds responsive padding.
-   *
-   * This overrides Tailwind's default container behavior to:
-   * - Auto-center content (mx-auto)
-   * - Add responsive horizontal padding
-   * - Set max-width for large screens
-   *
-   * Usage: <div className="container">...</div>
-   *
-   * For custom widths, use max-w-* utilities directly:
-   * <div className="max-w-6xl mx-auto px-4">...</div>
    */
   .container {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 1rem; /* 16px - mobile padding */
+    padding-left: 1rem;
     padding-right: 1rem;
   }
 
@@ -109,18 +99,143 @@
     min-width: 0;
   }
 
+  /* Premium Gradient Background */
+  .gradient-bg {
+    background: linear-gradient(135deg, #0a0e27 0%, #1a0f3a 50%, #0a0e27 100%);
+  }
+
+  /* Neon Glow Effect */
+  .neon-glow {
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.3), 0 0 20px rgba(123, 44, 191, 0.2);
+  }
+
+  .neon-glow-pink {
+    box-shadow: 0 0 10px rgba(255, 0, 110, 0.3), 0 0 20px rgba(123, 44, 191, 0.2);
+  }
+
+  /* Premium Button Styles */
+  .btn-neon {
+    @apply relative px-6 py-3 font-bold rounded-lg transition-all duration-300;
+    background: linear-gradient(135deg, #00FF88 0%, #00cc6f 100%);
+    color: #0a0e27;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+  }
+
+  .btn-neon:hover {
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.6), 0 0 40px rgba(0, 255, 136, 0.3);
+    transform: translateY(-2px);
+  }
+
+  .btn-neon-pink {
+    @apply relative px-6 py-3 font-bold rounded-lg transition-all duration-300;
+    background: linear-gradient(135deg, #FF006E 0%, #cc0055 100%);
+    color: #FFFFFF;
+    box-shadow: 0 0 20px rgba(255, 0, 110, 0.4);
+  }
+
+  .btn-neon-pink:hover {
+    box-shadow: 0 0 30px rgba(255, 0, 110, 0.6), 0 0 40px rgba(255, 0, 110, 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Premium Card Styles */
+  .card-premium {
+    @apply relative overflow-hidden rounded-xl border border-border bg-card p-6 transition-all duration-300;
+    background: linear-gradient(135deg, #1a1f3a 0%, #2a2f4a 100%);
+  }
+
+  .card-premium:hover {
+    @apply border-accent;
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.2), 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+  }
+
+  /* Game Card Styles */
+  .game-card {
+    @apply relative overflow-hidden rounded-xl bg-gradient-to-br from-purple-900/30 to-pink-900/30 border border-purple-500/30 p-4 transition-all duration-300 cursor-pointer;
+  }
+
+  .game-card:hover {
+    @apply border-accent;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.3), 0 0 60px rgba(123, 44, 191, 0.2);
+    transform: translateY(-6px) scale(1.02);
+  }
+
+  /* Gradient Text */
+  .gradient-text {
+    background: linear-gradient(135deg, #00FF88 0%, #FFD700 50%, #FF006E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Animated Border */
+  .animated-border {
+    position: relative;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+    background: linear-gradient(135deg, #1a1f3a 0%, #2a2f4a 100%);
+  }
+
+  .animated-border::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(135deg, #7B2CBF, #00FF88, #FF006E, #FFD700);
+    border-radius: 0.65rem;
+    z-index: -1;
+    opacity: 0.5;
+    animation: borderGlow 3s ease-in-out infinite;
+  }
+
+  @keyframes borderGlow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+
+  /* Smooth Transitions */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-out;
+  }
+
   @media (min-width: 640px) {
     .container {
-      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-left: 1.5rem;
       padding-right: 1.5rem;
     }
   }
 
   @media (min-width: 1024px) {
     .container {
-      padding-left: 2rem; /* 32px - desktop padding */
+      padding-left: 2rem;
       padding-right: 2rem;
-      max-width: 1280px; /* Standard content width */
+      max-width: 1280px;
     }
   }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0e27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #7B2CBF, #00FF88);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #9D4EDD, #00cc6f);
 }
