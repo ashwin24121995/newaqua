@@ -29,6 +29,7 @@ export default function Header() {
         { label: "Chicken", href: "/games?category=chicken" },
       ],
     },
+    { label: "Lobbies", href: "/lobbies" },
     { label: "Contact", href: "/contact" },
     { label: "FAQ", href: "/faq" },
   ];

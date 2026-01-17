@@ -15,6 +15,8 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
 import FAQ from "./pages/FAQ";
+import Lobby from "./pages/Lobby";
+import GameLobby from "./pages/GameLobby";
 
 /**
  * Design Philosophy: Premium Digital Entertainment with Luxury Accents
@@ -37,6 +39,8 @@ function Router() {
       <Route path={"/terms"} component={Terms} />
       <Route path={"/contact"} component={Contact} />
       <Route path={"/faq"} component={FAQ} />
+      <Route path={"/lobbies"} component={Lobby} />
+      <Route path={"/game-lobby/:gameId/:roomId"} component={GameLobby} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
