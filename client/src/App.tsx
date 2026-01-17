@@ -43,7 +43,7 @@ function Router() {
       <Route path={"/about"} component={About} />
       <Route path={"/how-to-play"} component={HowToPlay} />
       <Route path={"/games"} component={Games} />
-      <Route path={"/games/:gameId"} component={GameDetail} />
+      <Route path={"/game-detail/:gameId"} component={GameDetail} />
       <Route path={"/fair-play"} component={FairPlay} />
       <Route path={"/responsible-gaming"} component={Responsible} />
       <Route path={"/privacy"} component={Privacy} />

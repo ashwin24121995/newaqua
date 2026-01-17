@@ -370,7 +370,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">{game.name}</h3>
                 <p className="text-white/70 mb-4">{game.description}</p>
-                <Link href={`/games?category=${game.id}`}>
+                <Link href={`/game-detail/${game.id}`}>
                   <button className="w-full btn-neon text-sm">
                     Play Now
                   </button>
