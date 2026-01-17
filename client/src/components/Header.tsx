@@ -18,15 +18,14 @@ export default function Header() {
     { label: "How to Play", href: "/how-to-play" },
     {
       label: "Games",
-      href: "/games",
+      href: "/",
       submenu: [
-        { label: "All Games", href: "/games" },
-        { label: "Slots", href: "/games?category=slots" },
-        { label: "Poker", href: "/games?category=poker" },
-        { label: "Roulette", href: "/games?category=roulette" },
-        { label: "Dice", href: "/games?category=dice" },
-        { label: "Mines", href: "/games?category=mines" },
-        { label: "Chicken", href: "/games?category=chicken" },
+        { label: "Slots", href: "/play/slots" },
+        { label: "Poker", href: "/play/poker" },
+        { label: "Roulette", href: "/play/roulette" },
+        { label: "Dice", href: "/play/dice" },
+        { label: "Mines", href: "/play/mines" },
+        { label: "Chicken", href: "/play/chicken" },
       ],
     },
 
