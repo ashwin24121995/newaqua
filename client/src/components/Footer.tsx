@@ -65,32 +65,32 @@ export default function Footer() {
             <h4 className="font-semibold text-[#FF006E] mb-4">Games</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/games?category=slots">
+                <Link href="/play/slots">
                   <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Slots</a>
                 </Link>
               </li>
               <li>
-                <Link href="/games?category=poker">
+                <Link href="/play/poker">
                   <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Poker</a>
                 </Link>
               </li>
               <li>
-                <Link href="/games?category=roulette">
+                <Link href="/play/roulette">
                   <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Roulette</a>
                 </Link>
               </li>
               <li>
-                <Link href="/games?category=dice">
+                <Link href="/play/dice">
                   <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Dice</a>
                 </Link>
               </li>
               <li>
-                <Link href="/games?category=mines">
+                <Link href="/play/mines">
                   <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Mines</a>
                 </Link>
               </li>
               <li>
-                <Link href="/games?category=chicken">
+                <Link href="/play/chicken">
                   <a className="text-white/80 hover:text-[#FF006E] transition-all duration-300">Chicken</a>
                 </Link>
               </li>
