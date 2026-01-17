@@ -5,12 +5,38 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import HowToPlay from "./pages/HowToPlay";
+import Games from "./pages/Games";
+import GameDetail from "./pages/GameDetail";
+import FairPlay from "./pages/FairPlay";
+import Responsible from "./pages/Responsible";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Contact from "./pages/Contact";
+import FAQ from "./pages/FAQ";
 
+/**
+ * Design Philosophy: Premium Digital Entertainment with Luxury Accents
+ * - Purple (#7B2CBF) and Gold (#FFD700) color scheme
+ * - Sophisticated yet accessible gaming interface
+ * - Emphasis on trust, excitement, and responsible gaming
+ */
 
 function Router() {
   return (
     <Switch>
       <Route path={"/"} component={Home} />
+      <Route path={"/about"} component={About} />
+      <Route path={"/how-to-play"} component={HowToPlay} />
+      <Route path={"/games"} component={Games} />
+      <Route path={"/games/:gameId"} component={GameDetail} />
+      <Route path={"/fair-play"} component={FairPlay} />
+      <Route path={"/responsible-gaming"} component={Responsible} />
+      <Route path={"/privacy"} component={Privacy} />
+      <Route path={"/terms"} component={Terms} />
+      <Route path={"/contact"} component={Contact} />
+      <Route path={"/faq"} component={FAQ} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -18,18 +44,10 @@ function Router() {
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
           <Router />
