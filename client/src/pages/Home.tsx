@@ -208,16 +208,12 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/play/slots">
-                  <button className="btn-neon">
-                    <Play size={20} className="mr-2 inline" />
-                    Play Now
-                  </button>
+                <Link href="/play/slots" className="btn-neon inline-flex items-center">
+                  <Play size={20} className="mr-2" />
+                  Play Now
                 </Link>
-                <Link href="/how-to-play">
-                  <button className="px-6 py-3 font-bold rounded-lg border-2 border-[#00FF88] text-[#00FF88] hover:bg-[#00FF88]/10 transition-all duration-300">
-                    How It Works
-                  </button>
+                <Link href="/how-to-play" className="px-6 py-3 font-bold rounded-lg border-2 border-[#00FF88] text-[#00FF88] hover:bg-[#00FF88]/10 transition-all duration-300 inline-flex items-center">
+                  How It Works
                 </Link>
               </div>
 
@@ -372,10 +368,8 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">{game.name}</h3>
                 <p className="text-white/70 mb-4">{game.description}</p>
-                                <Link href={`/play/${game.id}`}>
-                  <button className="w-full btn-neon text-sm">
-                    Play Now
-                  </button>
+                <Link href={`/play/${game.id}`} className="w-full block btn-neon text-sm text-center">
+                  Play Now
                 </Link>
               </motion.div>
             ))}
@@ -388,10 +382,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mt-12"
           >
-            <Link href="/games">
-              <button className="px-8 py-3 font-bold rounded-lg border-2 border-[#00FF88] text-[#00FF88] hover:bg-[#00FF88]/10 transition-all duration-300">
-                View All Games
-              </button>
+            <Link href="/" className="px-8 py-3 font-bold rounded-lg border-2 border-[#00FF88] text-[#00FF88] hover:bg-[#00FF88]/10 transition-all duration-300 inline-block">
+              View All Games
             </Link>
           </motion.div>
         </div>
