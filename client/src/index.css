@@ -4,154 +4,71 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --radius-sm: calc(var(--radius) - 4px);
-  --radius-md: calc(var(--radius) - 2px);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) + 4px);
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-popover: var(--popover);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-ring: var(--ring);
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
-}
-
-:root {
-  /* Casino Purple-Gold Theme */
-  --primary: oklch(0.623 0.214 259.815); /* #7B2CBF - Primary Purple */
-  --primary-foreground: oklch(0.985 0 0); /* White */
-  --sidebar-primary: oklch(0.623 0.214 259.815);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
+  /* Primary Color - Deep Purple */
+  --color-primary: #7B2CBF;
+  --color-primary-foreground: #FFFFFF;
   
-  /* Gold Accents for Highlights */
-  --accent: oklch(1 0.3 90); /* #FFD700 - Gold */
-  --accent-foreground: oklch(0.141 0.005 285.823); /* Dark Purple */
+  /* Accent Color - Gold */
+  --color-accent: #FFD700;
+  --color-accent-foreground: #1a1a1a;
+  
+  /* Secondary Colors */
+  --color-secondary: #F5F3FF;
+  --color-secondary-foreground: #1a1a1a;
+  
+  /* Neutral Colors */
+  --color-background: #FFFFFF;
+  --color-foreground: #1a1a1a;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #1a1a1a;
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: #1a1a1a;
+  
+  /* Muted Colors */
+  --color-muted: #F3F4F6;
+  --color-muted-foreground: #6B7280;
+  
+  /* Border and Input */
+  --color-border: #E5E7EB;
+  --color-input: #E5E7EB;
+  --color-ring: #7B2CBF;
+  
+  /* Destructive */
+  --color-destructive: #EF4444;
+  --color-destructive-foreground: #FFFFFF;
   
   /* Chart Colors - Purple Gradient */
-  --chart-1: oklch(0.623 0.214 259.815);
-  --chart-2: oklch(0.5 0.18 260);
-  --chart-3: oklch(0.4 0.15 260);
-  --chart-4: oklch(0.3 0.12 260);
-  --chart-5: oklch(0.235 0.015 65);
+  --color-chart-1: #7B2CBF;
+  --color-chart-2: #9D4EDD;
+  --color-chart-3: #C77DFF;
+  --color-chart-4: #E0AAFF;
+  --color-chart-5: #F3E5FF;
   
+  /* Sidebar */
+  --color-sidebar: #FFFFFF;
+  --color-sidebar-foreground: #1a1a1a;
+  --color-sidebar-primary: #7B2CBF;
+  --color-sidebar-primary-foreground: #FFFFFF;
+  --color-sidebar-accent: #FFD700;
+  --color-sidebar-accent-foreground: #1a1a1a;
+  --color-sidebar-border: #E5E7EB;
+  --color-sidebar-ring: #7B2CBF;
+  
+  /* Radius */
   --radius: 0.65rem;
-  --background: oklch(1 0 0); /* White */
-  --foreground: oklch(0.235 0.015 65); /* Dark Purple */
-  --card: oklch(1 0 0); /* White */
-  --card-foreground: oklch(0.235 0.015 65); /* Dark Purple */
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.235 0.015 65);
-  --secondary: oklch(0.98 0.001 286.375); /* Light Gray */
-  --secondary-foreground: oklch(0.235 0.015 65); /* Dark Purple */
-  --muted: oklch(0.967 0.001 286.375); /* Light Gray */
-  --muted-foreground: oklch(0.552 0.016 285.938); /* Medium Gray */
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.32); /* Very Light Gray */
-  --input: oklch(0.92 0.004 286.32);
-  --ring: oklch(0.623 0.214 259.815); /* Purple */
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.235 0.015 65);
-  --sidebar-accent: oklch(1 0.3 90); /* Gold */
-  --sidebar-accent-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-border: oklch(0.92 0.004 286.32);
-  --sidebar-ring: oklch(0.623 0.214 259.815);
-}
-
-.dark {
-  --primary: var(--color-blue-700);
-  --primary-foreground: var(--color-blue-50);
-  --sidebar-primary: var(--color-blue-500);
-  --sidebar-primary-foreground: var(--color-blue-50);
-  --background: oklch(0.141 0.005 285.823);
-  --foreground: oklch(0.85 0.005 65);
-  --card: oklch(0.21 0.006 285.885);
-  --card-foreground: oklch(0.85 0.005 65);
-  --popover: oklch(0.21 0.006 285.885);
-  --popover-foreground: oklch(0.85 0.005 65);
-  --secondary: oklch(0.24 0.006 286.033);
-  --secondary-foreground: oklch(0.7 0.005 65);
-  --muted: oklch(0.274 0.006 286.033);
-  --muted-foreground: oklch(0.705 0.015 286.067);
-  --accent: oklch(0.274 0.006 286.033);
-  --accent-foreground:  oklch(0.92 0.005 65);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.488 0.243 264.376);
-  --chart-1: var(--color-blue-300);
-  --chart-2: var(--color-blue-500);
-  --chart-3: var(--color-blue-600);
-  --chart-4: var(--color-blue-700);
-  --chart-5: var(--color-blue-800);
-  --sidebar: oklch(0.21 0.006 285.885);
-  --sidebar-foreground: oklch(0.85 0.005 65);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
-  --sidebar-accent-foreground:  oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.488 0.243 264.376);
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.65rem;
+  --radius-xl: 1rem;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
-  
-  html {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
   body {
     @apply bg-background text-foreground;
   }
-  
-  h1 {
-    @apply text-5xl font-bold leading-tight;
-  }
-  
-  h2 {
-    @apply text-4xl font-bold leading-snug;
-  }
-  
-  h3 {
-    @apply text-2xl font-semibold;
-  }
-  
-  h4 {
-    @apply text-xl font-semibold;
-  }
-  
-  h5 {
-    @apply text-lg font-semibold;
-  }
-  
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
   [type="button"]:not(:disabled),
