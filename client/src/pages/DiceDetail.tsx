@@ -1,0 +1,85 @@
+import { useLocation } from 'wouter';
+import { Button } from '@/components/ui/button';
+
+export default function DiceDetail() {
+  const [, setLocation] = useLocation();
+
+  return (
+    <div className="min-h-screen bg-gradient-to-b from-[#0a0e27] to-[#1a0f3a]">
+      <div className="bg-gradient-to-r from-[#0a0e27] via-[#1a0f3a] to-[#0a0e27] border-b border-[#00FF88]/20 py-6">
+        <div className="container mx-auto px-4">
+          <button onClick={() => setLocation('/games')} className="text-[#00FF88] hover:text-white mb-4">← Back to Games</button>
+          <h1 className="text-4xl font-bold text-white mb-2">🎲 Dice Games</h1>
+          <p className="text-[#00FF88] text-lg">Roll the dice and predict HIGH or LOW!</p>
+        </div>
+      </div>
+      <div className="container mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-1">
+            <div className="sticky top-20 bg-gradient-to-b from-[#1a1f3a] to-[#2a2f4a] rounded-lg p-6 border border-[#00FF88]/20">
+              <img src="/images/game-dice-premium.png" alt="Dice" className="w-full rounded-lg mb-6 object-cover h-64" />
+              <Button onClick={() => setLocation('/play/dice')} className="w-full bg-[#00FF88] hover:bg-[#00FF88]/80 text-black font-bold py-6 text-lg rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 neon-glow">🎮 PLAY NOW</Button>
+              <div className="mt-6 p-4 bg-[#00FF88]/10 rounded-lg border border-[#00FF88]/30">
+                <p className="text-[#00FF88] text-sm font-semibold mb-2">Quick Stats:</p>
+                <ul className="text-white text-sm space-y-1">
+                  <li>💰 Min Bet: 10 coins</li>
+                  <li>💰 Max Bet: 5,000 coins</li>
+                  <li>🎯 Total: 2-12</li>
+                  <li>⭐ Payout: 1.96x</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="lg:col-span-2">
+            <div className="bg-gradient-to-b from-[#1a1f3a] to-[#2a2f4a] rounded-lg p-6 border border-[#00FF88]/20">
+              <h2 className="text-2xl font-bold text-[#00FF88] mb-6">How to Play Dice</h2>
+              <div className="space-y-6 text-white">
+                <div>
+                  <h3 className="text-[#00FF88] font-bold text-lg mb-3">Game Overview</h3>
+                  <p className="text-sm">Roll two dice and predict whether the total will be HIGH (8-12), LOW (2-6), or DRAW (7). Simple, fast-paced, and exciting!</p>
+                </div>
+                
+                <div>
+                  <h3 className="text-[#00FF88] font-bold text-lg mb-3">Betting Options</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li><strong>HIGH (8-12):</strong> Win 1.96x your bet</li>
+                    <li><strong>LOW (2-6):</strong> Win 1.96x your bet</li>
+                    <li><strong>DRAW (7):</strong> Win 4x your bet</li>
+                    <li><strong>Lose:</strong> Lose your bet amount</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h3 className="text-[#00FF88] font-bold text-lg mb-3">How to Play</h3>
+                  <ol className="space-y-2 text-sm list-decimal list-inside">
+                    <li>Set your bet amount (10-5,000 coins)</li>
+                    <li>Click HIGH, LOW, or DRAW button</li>
+                    <li>Click ROLL DICE to roll</li>
+                    <li>Two dice roll and show their values</li>
+                    <li>Total is calculated and compared to your prediction</li>
+                    <li>Win or lose based on the result</li>
+                  </ol>
+                </div>
+
+                <div>
+                  <h3 className="text-[#00FF88] font-bold text-lg mb-3">Probabilities</h3>
+                  <ul className="space-y-2 text-sm">
+                    <li>✓ HIGH (8-12): 41.67% chance</li>
+                    <li>✓ LOW (2-6): 41.67% chance</li>
+                    <li>✓ DRAW (7): 16.67% chance</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-gradient-to-r from-[#1a0f3a] via-[#2a1f4a] to-[#1a0f3a] border-t border-[#00FF88]/20 py-8 mt-12">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-white mb-4">Ready to Roll the Dice?</h2>
+          <Button onClick={() => setLocation('/play/dice')} className="bg-[#00FF88] hover:bg-[#00FF88]/80 text-black font-bold py-4 px-8 text-lg rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 neon-glow">🎮 PLAY DICE NOW</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
