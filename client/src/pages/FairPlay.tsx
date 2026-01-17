@@ -7,10 +7,8 @@ export default function FairPlay() {
       {/* Header - Bright and Clear */}
       <div className="bg-gradient-to-r from-[#00FF88] to-[#00D9FF] py-16 px-4">
         <div className="container mx-auto">
-          <Link href="/">
-            <a className="text-[#0a0e27] hover:text-[#0a0e27]/80 font-bold mb-6 inline-flex items-center gap-2 text-lg">
-              ← Back to Home
-            </a>
+          <Link href="/" className="text-[#0a0e27] hover:text-[#0a0e27]/80 font-bold mb-6 inline-flex items-center gap-2 text-lg">
+            ← Back to Home
           </Link>
           <h1 className="text-6xl font-bold text-[#0a0e27] mb-3">Fair Play</h1>
           <p className="text-[#0a0e27] text-2xl font-semibold">Certified Random Number Generation & Transparent Odds</p>

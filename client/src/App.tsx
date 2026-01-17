@@ -10,7 +10,7 @@ import HowToPlay from "./pages/HowToPlay";
 
 import GameDetail from "./pages/GameDetail";
 import FairPlay from "./pages/FairPlay";
-import Responsible from "./pages/Responsible";
+import ResponsibleGaming from "./pages/ResponsibleGaming";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Contact from "./pages/Contact";
@@ -45,7 +45,7 @@ function Router() {
 
       <Route path={"/game-detail/:gameId"} component={GameDetail} />
       <Route path={"/fair-play"} component={FairPlay} />
-      <Route path={"/responsible-gaming"} component={Responsible} />
+      <Route path={"/responsible-gaming"} component={ResponsibleGaming} />
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/terms"} component={Terms} />
       <Route path={"/contact"} component={Contact} />
