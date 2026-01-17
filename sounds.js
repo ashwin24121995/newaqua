@@ -367,16 +367,16 @@ function toggleSound() {
     return enabled;
 }
 
-// Add sound toggle button to page
-document.addEventListener('DOMContentLoaded', () => {
-    // Add sound toggle button if not exists
-    if (!document.getElementById('sound-toggle')) {
-        const soundBtn = document.createElement('button');
-        soundBtn.id = 'sound-toggle';
-        soundBtn.className = 'sound-toggle-btn';
-        soundBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
-        soundBtn.onclick = toggleSound;
-        soundBtn.title = 'Toggle Sound';
-        document.body.appendChild(soundBtn);
-    }
-});
+// Add sound toggle button to page - DISABLED
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Add sound toggle button if not exists
+//     if (!document.getElementById('sound-toggle')) {
+//         const soundBtn = document.createElement('button');
+//         soundBtn.id = 'sound-toggle';
+//         soundBtn.className = 'sound-toggle-btn';
+//         soundBtn.innerHTML = '<i class="fas fa-volume-up"></i>';
+//         soundBtn.onclick = toggleSound;
+//         soundBtn.title = 'Toggle Sound';
+//         document.body.appendChild(soundBtn);
+//     }
+// });
