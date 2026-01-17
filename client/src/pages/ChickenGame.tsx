@@ -83,18 +83,18 @@ export default function ChickenGame() {
 
       <main className="flex-1 container py-8">
         <button
-          onClick={() => setLocation("/lobbies")}
+          onClick={() => setLocation("/")}
           className="flex items-center gap-2 text-neon-green hover:text-neon-green/80 mb-6 transition"
         >
           <ArrowLeft size={20} />
-          Back to Lobbies
+          Back to All Games
         </button>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Game Area */}
           <div className="lg:col-span-2">
             <Card className="bg-gradient-to-b from-slate-900 to-slate-950 border-neon-green/30 p-8">
-              <h1 className="text-4xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-neon-green to-neon-pink">
+              <h1 className="text-4xl font-bold mb-2 text-neon-green">
                 🐔 Chicken Run
               </h1>
               <p className="text-slate-400 mb-8">Chase and catch the chicken to multiply your winnings!</p>

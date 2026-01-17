@@ -7,7 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import HowToPlay from "./pages/HowToPlay";
-import Games from "./pages/Games";
+
 import GameDetail from "./pages/GameDetail";
 import FairPlay from "./pages/FairPlay";
 import Responsible from "./pages/Responsible";
@@ -42,7 +42,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/about"} component={About} />
       <Route path={"/how-to-play"} component={HowToPlay} />
-      <Route path={"/games"} component={Games} />
+
       <Route path={"/game-detail/:gameId"} component={GameDetail} />
       <Route path={"/fair-play"} component={FairPlay} />
       <Route path={"/responsible-gaming"} component={Responsible} />
