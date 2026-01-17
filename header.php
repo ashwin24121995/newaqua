@@ -6,6 +6,7 @@
     <title><?php echo isset($pageTitle) ? $pageTitle . ' - AQUASTRUCT Casino' : 'AQUASTRUCT Casino - Premium Social Gaming'; ?></title>
     <meta name="description" content="AQUASTRUCT Casino - Experience premium social casino gaming with slots, poker, roulette, and more. Play for free with virtual currency.">
     <meta name="keywords" content="social casino, online games, slots, poker, roulette, free casino games">
+    <meta name="google-site-verification" content="5GVcgMgM6zoSW60grmRB35Gd1Buei4XRJD0oPKdPca8" />
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.webp">

@@ -1,0 +1,45 @@
+# robots.txt for AQUASTRUCT Casino
+# https://valhallafantasy.com
+
+User-agent: *
+Allow: /
+
+# Disallow admin or private directories (if any in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all game pages
+Allow: /games.php
+Allow: /poker.php
+Allow: /blackjack.php
+Allow: /baccarat.php
+Allow: /slots.php
+Allow: /roulette.php
+Allow: /wheel.php
+Allow: /dice.php
+Allow: /coinflip.php
+Allow: /crash.php
+Allow: /mines.php
+Allow: /plinko.php
+Allow: /keno.php
+Allow: /winadda.php
+Allow: /fairdeal.php
+Allow: /99exch.php
+Allow: /laser247.php
+Allow: /11xplay.php
+
+# Allow information pages
+Allow: /howtoplay.php
+Allow: /about.php
+Allow: /contact.php
+Allow: /faq.php
+Allow: /fairplay.php
+Allow: /privacy.php
+Allow: /terms.php
+Allow: /responsible.php
+
+# Sitemap location
+Sitemap: https://valhallafantasy.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
