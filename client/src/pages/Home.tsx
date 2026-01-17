@@ -375,17 +375,7 @@ export default function Home() {
             ))}
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-            className="text-center mt-12"
-          >
-            <Link href="/" className="px-8 py-3 font-bold rounded-lg border-2 border-[#00FF88] text-[#00FF88] hover:bg-[#00FF88]/10 transition-all duration-300 inline-block">
-              View All Games
-            </Link>
-          </motion.div>
+
         </div>
       </section>
 
