@@ -78,9 +78,9 @@ include 'header.php';
                         </div>
                         <div class="col-6">
                             <div class="mini-game-card">
-                                <i class="fas fa-trophy game-card-icon"></i>
-                                <h5>Leaderboards</h5>
-                                <p>Compete with others for the top spot</p>
+                                <i class="fas fa-dice game-card-icon"></i>
+                                <h5>Slot Machines</h5>
+                                <p>Spin the reels and win big jackpots</p>
                             </div>
                         </div>
                     </div>

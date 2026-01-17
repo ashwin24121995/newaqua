@@ -9,11 +9,10 @@
                         AQUASTRUCT Casino is a premium social gaming platform offering free-to-play casino games. 
                         Experience the thrill of casino gaming with virtual currency in a safe and entertaining environment.
                     </p>
-                    <div class="social-links mt-3">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <div class="feature-badges mt-3">
+                        <span class="feature-badge"><i class="fas fa-18-plus me-2"></i>18+</span>
+                        <span class="feature-badge"><i class="fas fa-shield-check me-2"></i>Fair Play</span>
+                        <span class="feature-badge"><i class="fas fa-users me-2"></i>Social Casino</span>
                     </div>
                 </div>
                 
